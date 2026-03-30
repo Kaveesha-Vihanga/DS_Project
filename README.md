@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # Investment platform
 
@@ -9,3 +10,7 @@
 
   Run `npm run dev` to start the development server.
   
+=======
+Tourism Business Investment and Marketing 
+Analysis System
+>>>>>>> 305e88d8a341ee6bc0eebe1312acce342d0b29f3
