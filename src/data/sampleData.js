@@ -154,3 +154,93 @@ export const analyticsData = {
     { quarter: 'Q1 2025', revenue: 1050 },
   ],
 };
+
+// Province data for Regional Demand page
+export const provinceData = [
+  { province: "Central", total_visitors: 963553, revenue_M: 2386.29, foreign_pct: 34.6 },
+  { province: "Southern", total_visitors: 742830, revenue_M: 2540.11, foreign_pct: 53.7 },
+  { province: "North Central", total_visitors: 449801, revenue_M: 1219.87, foreign_pct: 72.3 },
+  { province: "Western", total_visitors: 122761, revenue_M: 68.05, foreign_pct: 45.5 },
+  { province: "Northern", total_visitors: 115121, revenue_M: 15.84, foreign_pct: 6.1 },
+  { province: "North Western", total_visitors: 99686, revenue_M: 195.58, foreign_pct: 33.1 },
+  { province: "Eastern", total_visitors: 66612, revenue_M: 59.35, foreign_pct: 20.2 },
+  { province: "Uva", total_visitors: 50347, revenue_M: 36.69, foreign_pct: 79.5 },
+  { province: "Sabaragamuwa", total_visitors: 39659, revenue_M: 15.41, foreign_pct: 31.7 }
+];
+
+// Hotel investment trends 2010-2025
+export const hotelInvestmentData = [
+  {year:2010, received:55, approved:3, received_investment:958.87, approved_investment:17.17},
+  {year:2011, received:153, approved:44, received_investment:1157.23, approved_investment:251.57},
+  {year:2012, received:72, approved:57, received_investment:576.24, approved_investment:313.22},
+  {year:2013, received:60, approved:36, received_investment:1124.295, approved_investment:370.64},
+  {year:2014, received:68, approved:42, received_investment:957.79, approved_investment:426.398},
+  {year:2015, received:59, approved:36, received_investment:430.98, approved_investment:889.945},
+  {year:2016, received:76, approved:41, received_investment:590.02, approved_investment:145.633},
+  {year:2017, received:96, approved:45, received_investment:314.82, approved_investment:379.77},
+  {year:2018, received:141, approved:44, received_investment:935.06, approved_investment:159.724},
+  {year:2019, received:132, approved:57, received_investment:190.71, approved_investment:755.73},
+  {year:2020, received:54, approved:24, received_investment:236.06, approved_investment:95.47},
+  {year:2021, received:45, approved:30, received_investment:116.55, approved_investment:103.985},
+  {year:2022, received:43, approved:22, received_investment:65.574, approved_investment:36.833},
+  {year:2023, received:68, approved:34, received_investment:241.142, approved_investment:170.126},
+  {year:2024, received:76, approved:30, received_investment:160.729, approved_investment:41.723},
+  {year:2025, received:51, approved:22, received_investment:169.096, approved_investment:53.566},
+];
+
+// Mock scoring result
+export const MOCK_RESULT = {
+  investment_score_0_100: 72.4,
+  topsis_base_closeness_0_1: 0.68,
+  gap_adjustment: 0.043,
+  drivers: {
+    future_demand_fit: 0.82,
+    price_fit_vs_median: 0.61,
+    facility_completeness: 0.75,
+    gap_alignment: 0.58,
+    surplus_risk: 0.22,
+    area_median_price: 95
+  },
+  future_demand_pct: 86,
+  expected_revenue_index: 0.74,
+  regional_demand_pct: 82
+};
+
+// Sri Lankan districts with main areas
+export const districtData = {
+  "Colombo": ["Colombo City", "Mount Lavinia", "Negombo", "Dehiwala"],
+  "Gampaha": ["Negombo", "Katunayake", "Gampaha", "Minuwangoda"],
+  "Kalutara": ["Kalutara", "Beruwala", "Wadduwa", "Panadura"],
+  "Kandy": ["Kandy City", "Peradeniya", "Gampola", "Katugastota"],
+  "Matale": ["Matale", "Dambulla", "Sigiriya", "Nalanda"],
+  "Nuwara Eliya": ["Nuwara Eliya", "Nanu Oya", "Hatton", "Talawakele"],
+  "Galle": ["Galle", "Hikkaduwa", "Unawatuna", "Bentota"],
+  "Matara": ["Matara", "Mirissa", "Weligama", "Dondra"],
+  "Hambantota": ["Hambantota", "Tangalle", "Tissamaharama", "Kataragama"],
+  "Jaffna": ["Jaffna", "Point Pedro", "Chavakachcheri", "Valvettithurai"],
+  "Kilinochchi": ["Kilinochchi", "Pallai", "Poonakary"],
+  "Mannar": ["Mannar", "Madhu"],
+  "Vavuniya": ["Vavuniya", "Cheddikulam"],
+  "Mullaitivu": ["Mullaitivu", "Puthukudiyiruppu"],
+  "Batticaloa": ["Batticaloa", "Kalkudah", "Passikudah"],
+  "Ampara": ["Ampara", "Arugam Bay", "Kalmunai"],
+  "Trincomalee": ["Trincomalee", "Nilaveli", "Uppuveli"],
+  "Kurunegala": ["Kurunegala", "Kuliyapitiya", "Narammala"],
+  "Puttalam": ["Puttalam", "Chilaw", "Kalpitiya"],
+  "Anuradhapura": ["Anuradhapura", "Mihintale", "Kekirawa"],
+  "Polonnaruwa": ["Polonnaruwa", "Hingurakgoda", "Medirigiriya"],
+  "Badulla": ["Badulla", "Ella", "Bandarawela", "Haputale"],
+  "Monaragala": ["Monaragala", "Wellawaya", "Buttala"],
+  "Ratnapura": ["Ratnapura", "Embilipitiya", "Balangoda"],
+  "Kegalle": ["Kegalle", "Mawanella", "Rambukkana"]
+};
+
+// Mock facility coverage data
+export const facilityGapData = [
+  { facility: "WiFi", coverage: 95 },
+  { facility: "AC", coverage: 88 },
+  { facility: "Restaurant", coverage: 76 },
+  { facility: "Pool", coverage: 42 },
+  { facility: "Gym", coverage: 25 },
+  { facility: "Spa", coverage: 18 },
+];

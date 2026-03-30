@@ -53,9 +53,9 @@ export default function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="w-full sm:w-auto border-white text-white hover:bg-white/10 backdrop-blur-sm"
+                className="w-full sm:w-auto bg-linear-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white shadow-lg shadow-teal-500/50"
               >
-                View Investment Analytics
+                View Investment score
               </Button>
             </Link>
           </div>

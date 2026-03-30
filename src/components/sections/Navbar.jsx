@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
+import bla from '@/images/logo.jpg'
 
 export default function Navbar() {
   const location = useLocation();
@@ -10,7 +11,7 @@ export default function Navbar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Regional Demand', href: '/regional-demand' },
-    { name: 'Analytics', href: '/analytics' },
+    { name: 'Investment Score', href: '/analytics' },
   ];
 
   const isActive = (href) => {
@@ -24,10 +25,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg overflow-hidden bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg overflow-hidden bg-linear-to-br from-teal-500 to-blue-600 flex items-center justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1577174881249-60usKfb4d10?w=100&h=100&fit=crop" 
-                alt="Logo" 
+                src={bla} 
+                alt="Invest Ceylon" 
                 className="w-full h-full object-cover"
               />
             </div>

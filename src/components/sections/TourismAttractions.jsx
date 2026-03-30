@@ -3,17 +3,29 @@ import { Card, CardContent } from '../ui/card';
 import { Badge } from '../ui/badge';
 import { tourismAttractions } from '../../data/sampleData';
 
+import img1 from '@/images/sigiriya.jpg'
+import img2 from '@/images/temple of tooth.jpg'
+import img3 from '@/images/galle.jpg'
+import img4 from '@/images/yala.jpg' 
+import img5 from '@/images/nine arch.jpg'
+import img6 from '@/images/dam bulla.jpg'
+import img7 from '@/images/mirissa.jpg'
+import img8 from '@/images/nuwara eliya.jpg'
+
+
 export default function TourismAttractions() {
   const attractionImages = [
-    'https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1588607916307-281f665a6c3a?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1584735174965-e94cd6d69ba7?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1528127269322-539801943592?w=400&h=300&fit=crop',
-  ];
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8
+  ]
+
+
 
   return (
     <section className="py-20 bg-white">
