@@ -1,0 +1,377 @@
+const facilitySatisfactionByArea = [
+  {
+    area: "Dehiwala-Mount Lavinia 10350",
+    facilities: {
+      cleanliness: 95.1,
+      location: 90.1,
+      staff: 91.4,
+      room: 70.1,
+      breakfast: 65.8,
+      gym: 100.0,
+      pool: 100.0,
+      parking: 38.5,
+      AC: 50.0,
+      wifi: 8.3
+    }
+  },
+  {
+    area: "Colombo 00500",
+    facilities: {
+      pool: 79.5,
+      breakfast: 78.3,
+      staff: 89.8,
+      room: 76.2,
+      cleanliness: 91.6,
+      location: 93.1,
+      wifi: 44.8,
+      AC: 66.7,
+      parking: 40.0,
+      gym: 72.0   // added
+    }
+  },
+  {
+    area: "Sri Jayawardenepura Kotte 10100",
+    facilities: {
+      pool: 97.8,
+      staff: 95.9,
+      room: 85.9,
+      location: 91.5,
+      breakfast: 89.9,
+      cleanliness: 94.7,
+      AC: 0.0,
+      wifi: 75.0,
+      gym: 68.0,    // added
+      parking: 55.0 // added
+    }
+  },
+  {
+    area: "Padukka",
+    facilities: {
+      staff: 97.0,
+      location: 96.9,
+      pool: 92.3,
+      breakfast: 100.0,
+      room: 71.4,
+      cleanliness: 93.8,
+      wifi: 0.0,
+      gym: 60.0,    // added
+      AC: 45.0,     // added
+      parking: 80.0 // added
+    }
+  },
+  {
+    area: "Colombo 00300",
+    facilities: {
+      staff: 81.0,
+      room: 78.5,
+      location: 91.3,
+      pool: 93.2,
+      breakfast: 78.5,
+      cleanliness: 92.9,
+      gym: 88.0,
+      wifi: 47.0,
+      AC: 41.1,
+      parking: 72.1
+    }
+  },
+  {
+    area: "Colombo",
+    facilities: {
+      AC: 53.3,
+      cleanliness: 88.6,
+      location: 90.4,
+      parking: 53.8,
+      staff: 88.6,
+      room: 69.0,
+      breakfast: 89.0,
+      gym: 92.3,
+      wifi: 50.0,
+      pool: 65.8
+    }
+  },
+  {
+    area: "Colombo 00800",
+    facilities: {
+      staff: 93.7,
+      location: 81.8,
+      breakfast: 88.9,
+      wifi: 16.7,
+      room: 72.4,
+      cleanliness: 81.8,
+      pool: 100.0,
+      AC: 75.0,
+      parking: 66.7,
+      gym: 58.0     // added
+    }
+  },
+  {
+    area: "Colombo 00700",
+    facilities: {
+      pool: 78.4,
+      staff: 89.4,
+      cleanliness: 84.9,
+      location: 88.5,
+      breakfast: 81.0,
+      room: 74.1,
+      wifi: 41.5,
+      AC: 63.1,
+      parking: 22.2,
+      gym: 100.0
+    }
+  },
+  {
+    area: "Boralesgamuwa",
+    facilities: {
+      location: 80.0,
+      room: 50.0,
+      staff: 100.0,
+      cleanliness: 100.0,
+      breakfast: 75.0,  // added
+      wifi: 33.3,       // added
+      AC: 50.0,         // added
+      pool: 66.7,       // added
+      gym: 40.0,        // added
+      parking: 60.0     // added
+    }
+  },
+  {
+    area: "Piliyandala 10300",
+    facilities: {
+      location: 100.0,
+      staff: 100.0,
+      room: 40.0,
+      AC: 0.0,
+      cleanliness: 66.7,
+      parking: 100.0,
+      breakfast: 50.0,  // added
+      wifi: 25.0,       // added
+      pool: 33.3,       // added
+      gym: 20.0         // added
+    }
+  },
+  {
+    area: "Moratuwa",
+    facilities: {
+      cleanliness: 83.3,
+      location: 100.0,
+      staff: 100.0,
+      room: 57.1,
+      breakfast: 0.0,
+      wifi: 0.0,
+      AC: 42.9,         // added
+      pool: 57.1,       // added
+      gym: 28.6,        // added
+      parking: 71.4     // added
+    }
+  },
+  {
+    area: "Gonapola 12410",
+    facilities: {
+      breakfast: 0.0,
+      location: 100.0,
+      staff: 100.0,
+      cleanliness: 100.0,
+      room: 75.0,       // added
+      wifi: 50.0,       // added
+      AC: 25.0,         // added
+      pool: 50.0,       // added
+      gym: 0.0,         // added
+      parking: 100.0    // added
+    }
+  },
+  {
+    area: "Dehiwala-Mount Lavinia 10370",
+    facilities: {
+      pool: 77.8,
+      staff: 93.3,
+      location: 84.4,
+      room: 50.9,
+      parking: 100.0,
+      cleanliness: 71.8,
+      breakfast: 73.7,
+      AC: 31.2,
+      wifi: 50.0,
+      gym: 44.4         // added
+    }
+  },
+  {
+    area: "Colombo 00010",
+    facilities: {
+      cleanliness: 96.5,
+      location: 91.7,
+      pool: 100.0,
+      parking: 50.0,
+      gym: 100.0,
+      staff: 93.6,
+      room: 87.7,
+      AC: 95.5,
+      wifi: 36.4,
+      breakfast: 89.0
+    }
+  },
+  {
+    area: "Colombo 00100",
+    facilities: {
+      location: 93.5,
+      AC: 90.9,
+      staff: 90.3,
+      breakfast: 76.4,
+      room: 79.2,
+      cleanliness: 87.5,
+      wifi: 75.0,
+      pool: 76.5,
+      gym: 87.5,
+      parking: 0.0
+    }
+  },
+  {
+    area: "Battaramulla 10120",
+    facilities: {
+      cleanliness: 100.0,
+      location: 92.9,
+      room: 75.0,
+      staff: 100.0,
+      breakfast: 33.3,
+      wifi: 50.0,
+      AC: 0.0,
+      pool: 62.5,       // added
+      gym: 50.0,        // added
+      parking: 71.4     // added
+    }
+  },
+  {
+    area: "Colombo 00600",
+    facilities: {
+      staff: 77.4,
+      room: 61.1,
+      cleanliness: 71.8,
+      location: 87.5,
+      AC: 44.8,
+      wifi: 14.8,
+      parking: 62.5,
+      breakfast: 64.2,
+      pool: 80.5,
+      gym: 40.0
+    }
+  },
+  {
+    area: "Colombo 01300",
+    facilities: {
+      AC: 66.7,
+      location: 100.0,
+      staff: 33.3,
+      cleanliness: 60.0,
+      room: 100.0,
+      breakfast: 66.7,  // added
+      wifi: 33.3,       // added
+      pool: 50.0,       // added
+      gym: 33.3,        // added
+      parking: 66.7     // added
+    }
+  },
+  {
+    area: "Maharagama 10280",
+    facilities: {
+      location: 94.1,
+      room: 97.0,
+      staff: 100.0,
+      cleanliness: 100.0,
+      parking: 100.0,
+      AC: 100.0,
+      wifi: 66.7,
+      breakfast: 85.7,  // added
+      pool: 71.4,       // added
+      gym: 57.1         // added
+    }
+  },
+  {
+    area: "Colombo 00900",
+    facilities: {
+      staff: 83.1,
+      room: 80.7,
+      location: 70.2,
+      AC: 50.0,
+      breakfast: 50.0,
+      cleanliness: 97.8,
+      parking: 100.0,
+      gym: 71.4,
+      wifi: 60.0,
+      pool: 62.5         // added
+    }
+  },
+  {
+    area: "Colombo 00400",
+    facilities: {
+      room: 69.3,
+      staff: 80.2,
+      location: 86.4,
+      breakfast: 69.1,
+      cleanliness: 80.7,
+      gym: 50.0,
+      pool: 81.5,
+      AC: 25.0,
+      wifi: 18.2,
+      parking: 0.0
+    }
+  },
+  {
+    area: "Colombo 00200",
+    facilities: {
+      room: 70.1,
+      breakfast: 81.3,
+      location: 86.3,
+      cleanliness: 88.5,
+      staff: 81.4,
+      parking: 27.3,
+      wifi: 50.0,
+      AC: 56.7,
+      pool: 88.1,
+      gym: 88.5
+    }
+  },
+  {
+    area: "Kolonnawa 10107",
+    facilities: {
+      cleanliness: 100.0,
+      location: 78.9,
+      wifi: 75.0,
+      room: 75.0,
+      staff: 100.0,
+      parking: 100.0,
+      breakfast: 66.7,  // added
+      AC: 50.0,         // added
+      pool: 55.6,       // added
+      gym: 44.4         // added
+    }
+  },
+  {
+    area: "Homagama",
+    facilities: {
+      staff: 100.0,
+      location: 100.0,
+      room: 66.7,
+      cleanliness: 50.0,
+      breakfast: 83.3,  // added
+      wifi: 33.3,       // added
+      AC: 66.7,         // added
+      pool: 50.0,       // added
+      gym: 33.3,        // added
+      parking: 83.3     // added
+    }
+  },
+  {
+    area: "Panadura",
+    facilities: {
+      location: 75.0,
+      breakfast: 100.0,
+      room: 83.3,
+      cleanliness: 100.0,
+      staff: 100.0,
+      AC: 100.0,
+      wifi: 50.0,       // added
+      pool: 66.7,       // added
+      gym: 33.3,        // added
+      parking: 83.3     // added
+    }
+  }
+];

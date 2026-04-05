@@ -1,0 +1,4094 @@
+{
+  "Australia": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 13797,
+        "Lower_CI": 11728,
+        "Upper_CI": 15867
+      },
+      {
+        "Month": "February",
+        "Forecast": 12649,
+        "Lower_CI": 10751,
+        "Upper_CI": 14546
+      },
+      {
+        "Month": "March",
+        "Forecast": 11063,
+        "Lower_CI": 9403,
+        "Upper_CI": 12722
+      },
+      {
+        "Month": "April",
+        "Forecast": 10211,
+        "Lower_CI": 8679,
+        "Upper_CI": 11743
+      },
+      {
+        "Month": "May",
+        "Forecast": 9446,
+        "Lower_CI": 8029,
+        "Upper_CI": 10864
+      },
+      {
+        "Month": "June",
+        "Forecast": 9065,
+        "Lower_CI": 7705,
+        "Upper_CI": 10424
+      },
+      {
+        "Month": "July",
+        "Forecast": 9385,
+        "Lower_CI": 7977,
+        "Upper_CI": 10793
+      },
+      {
+        "Month": "August",
+        "Forecast": 9717,
+        "Lower_CI": 8260,
+        "Upper_CI": 11175
+      },
+      {
+        "Month": "September",
+        "Forecast": 9389,
+        "Lower_CI": 7981,
+        "Upper_CI": 10798
+      },
+      {
+        "Month": "October",
+        "Forecast": 9756,
+        "Lower_CI": 8292,
+        "Upper_CI": 11219
+      },
+      {
+        "Month": "November",
+        "Forecast": 11174,
+        "Lower_CI": 9498,
+        "Upper_CI": 12851
+      },
+      {
+        "Month": "December",
+        "Forecast": 15534,
+        "Lower_CI": 13204,
+        "Upper_CI": 17865
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 14187,
+        "Lower_CI": 12059,
+        "Upper_CI": 16315
+      },
+      {
+        "Month": "February",
+        "Forecast": 13259,
+        "Lower_CI": 11270,
+        "Upper_CI": 15248
+      },
+      {
+        "Month": "March",
+        "Forecast": 11941,
+        "Lower_CI": 10150,
+        "Upper_CI": 13733
+      },
+      {
+        "Month": "April",
+        "Forecast": 11208,
+        "Lower_CI": 9527,
+        "Upper_CI": 12890
+      },
+      {
+        "Month": "May",
+        "Forecast": 10554,
+        "Lower_CI": 8971,
+        "Upper_CI": 12137
+      },
+      {
+        "Month": "June",
+        "Forecast": 10231,
+        "Lower_CI": 8696,
+        "Upper_CI": 11765
+      },
+      {
+        "Month": "July",
+        "Forecast": 10513,
+        "Lower_CI": 8936,
+        "Upper_CI": 12089
+      },
+      {
+        "Month": "August",
+        "Forecast": 10804,
+        "Lower_CI": 9183,
+        "Upper_CI": 12424
+      },
+      {
+        "Month": "September",
+        "Forecast": 10532,
+        "Lower_CI": 8952,
+        "Upper_CI": 12111
+      },
+      {
+        "Month": "October",
+        "Forecast": 10865,
+        "Lower_CI": 9235,
+        "Upper_CI": 12495
+      },
+      {
+        "Month": "November",
+        "Forecast": 12123,
+        "Lower_CI": 10305,
+        "Upper_CI": 13942
+      },
+      {
+        "Month": "December",
+        "Forecast": 15858,
+        "Lower_CI": 13479,
+        "Upper_CI": 18237
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 14631,
+        "Lower_CI": 12437,
+        "Upper_CI": 16826
+      },
+      {
+        "Month": "February",
+        "Forecast": 13793,
+        "Lower_CI": 11724,
+        "Upper_CI": 15862
+      },
+      {
+        "Month": "March",
+        "Forecast": 12584,
+        "Lower_CI": 10697,
+        "Upper_CI": 14472
+      },
+      {
+        "Month": "April",
+        "Forecast": 11899,
+        "Lower_CI": 10114,
+        "Upper_CI": 13684
+      },
+      {
+        "Month": "May",
+        "Forecast": 11290,
+        "Lower_CI": 9596,
+        "Upper_CI": 12984
+      },
+      {
+        "Month": "June",
+        "Forecast": 10990,
+        "Lower_CI": 9342,
+        "Upper_CI": 12639
+      },
+      {
+        "Month": "July",
+        "Forecast": 11257,
+        "Lower_CI": 9568,
+        "Upper_CI": 12945
+      },
+      {
+        "Month": "August",
+        "Forecast": 11531,
+        "Lower_CI": 9801,
+        "Upper_CI": 13261
+      },
+      {
+        "Month": "September",
+        "Forecast": 11282,
+        "Lower_CI": 9589,
+        "Upper_CI": 12974
+      },
+      {
+        "Month": "October",
+        "Forecast": 11602,
+        "Lower_CI": 9861,
+        "Upper_CI": 13342
+      },
+      {
+        "Month": "November",
+        "Forecast": 12795,
+        "Lower_CI": 10876,
+        "Upper_CI": 14715
+      },
+      {
+        "Month": "December",
+        "Forecast": 16276,
+        "Lower_CI": 13835,
+        "Upper_CI": 18718
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 15098,
+        "Lower_CI": 12834,
+        "Upper_CI": 17363
+      },
+      {
+        "Month": "February",
+        "Forecast": 14297,
+        "Lower_CI": 12152,
+        "Upper_CI": 16441
+      },
+      {
+        "Month": "March",
+        "Forecast": 13132,
+        "Lower_CI": 11162,
+        "Upper_CI": 15102
+      },
+      {
+        "Month": "April",
+        "Forecast": 12466,
+        "Lower_CI": 10596,
+        "Upper_CI": 14337
+      },
+      {
+        "Month": "May",
+        "Forecast": 11875,
+        "Lower_CI": 10094,
+        "Upper_CI": 13657
+      },
+      {
+        "Month": "June",
+        "Forecast": 11585,
+        "Lower_CI": 9847,
+        "Upper_CI": 13323
+      },
+      {
+        "Month": "July",
+        "Forecast": 11845,
+        "Lower_CI": 10068,
+        "Upper_CI": 13622
+      },
+      {
+        "Month": "August",
+        "Forecast": 12113,
+        "Lower_CI": 10296,
+        "Upper_CI": 13930
+      },
+      {
+        "Month": "September",
+        "Forecast": 11873,
+        "Lower_CI": 10092,
+        "Upper_CI": 13654
+      },
+      {
+        "Month": "October",
+        "Forecast": 12187,
+        "Lower_CI": 10359,
+        "Upper_CI": 14015
+      },
+      {
+        "Month": "November",
+        "Forecast": 13354,
+        "Lower_CI": 11351,
+        "Upper_CI": 15358
+      },
+      {
+        "Month": "December",
+        "Forecast": 16733,
+        "Lower_CI": 14223,
+        "Upper_CI": 19243
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 15575,
+        "Lower_CI": 13238,
+        "Upper_CI": 17911
+      },
+      {
+        "Month": "February",
+        "Forecast": 14788,
+        "Lower_CI": 12569,
+        "Upper_CI": 17006
+      },
+      {
+        "Month": "March",
+        "Forecast": 13641,
+        "Lower_CI": 11594,
+        "Upper_CI": 15687
+      },
+      {
+        "Month": "April",
+        "Forecast": 12983,
+        "Lower_CI": 11036,
+        "Upper_CI": 14931
+      },
+      {
+        "Month": "May",
+        "Forecast": 12400,
+        "Lower_CI": 10540,
+        "Upper_CI": 14260
+      },
+      {
+        "Month": "June",
+        "Forecast": 12113,
+        "Lower_CI": 10296,
+        "Upper_CI": 13931
+      },
+      {
+        "Month": "July",
+        "Forecast": 12371,
+        "Lower_CI": 10515,
+        "Upper_CI": 14226
+      },
+      {
+        "Month": "August",
+        "Forecast": 12636,
+        "Lower_CI": 10740,
+        "Upper_CI": 14531
+      },
+      {
+        "Month": "September",
+        "Forecast": 12399,
+        "Lower_CI": 10539,
+        "Upper_CI": 14259
+      },
+      {
+        "Month": "October",
+        "Forecast": 12712,
+        "Lower_CI": 10805,
+        "Upper_CI": 14618
+      },
+      {
+        "Month": "November",
+        "Forecast": 13868,
+        "Lower_CI": 11788,
+        "Upper_CI": 15948
+      },
+      {
+        "Month": "December",
+        "Forecast": 17205,
+        "Lower_CI": 14624,
+        "Upper_CI": 19785
+      }
+    ]
+  },
+  "China": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 12708,
+        "Lower_CI": 10855,
+        "Upper_CI": 14576
+      },
+      {
+        "Month": "February",
+        "Forecast": 19725,
+        "Lower_CI": 17829,
+        "Upper_CI": 21407
+      },
+      {
+        "Month": "March",
+        "Forecast": 13303,
+        "Lower_CI": 11495,
+        "Upper_CI": 15121
+      },
+      {
+        "Month": "April",
+        "Forecast": 13278,
+        "Lower_CI": 11356,
+        "Upper_CI": 15030
+      },
+      {
+        "Month": "May",
+        "Forecast": 11956,
+        "Lower_CI": 10075,
+        "Upper_CI": 13666
+      },
+      {
+        "Month": "June",
+        "Forecast": 11943,
+        "Lower_CI": 10153,
+        "Upper_CI": 13648
+      },
+      {
+        "Month": "July",
+        "Forecast": 11991,
+        "Lower_CI": 10262,
+        "Upper_CI": 13839
+      },
+      {
+        "Month": "August",
+        "Forecast": 11988,
+        "Lower_CI": 10278,
+        "Upper_CI": 13837
+      },
+      {
+        "Month": "September",
+        "Forecast": 11998,
+        "Lower_CI": 10142,
+        "Upper_CI": 13826
+      },
+      {
+        "Month": "October",
+        "Forecast": 12778,
+        "Lower_CI": 11116,
+        "Upper_CI": 14474
+      },
+      {
+        "Month": "November",
+        "Forecast": 14208,
+        "Lower_CI": 12343,
+        "Upper_CI": 16062
+      },
+      {
+        "Month": "December",
+        "Forecast": 19251,
+        "Lower_CI": 17386,
+        "Upper_CI": 20996
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 15219,
+        "Lower_CI": 13418,
+        "Upper_CI": 17087
+      },
+      {
+        "Month": "February",
+        "Forecast": 23478,
+        "Lower_CI": 21560,
+        "Upper_CI": 25253
+      },
+      {
+        "Month": "March",
+        "Forecast": 15797,
+        "Lower_CI": 13882,
+        "Upper_CI": 17615
+      },
+      {
+        "Month": "April",
+        "Forecast": 15694,
+        "Lower_CI": 13816,
+        "Upper_CI": 17614
+      },
+      {
+        "Month": "May",
+        "Forecast": 14160,
+        "Lower_CI": 12273,
+        "Upper_CI": 15826
+      },
+      {
+        "Month": "June",
+        "Forecast": 14073,
+        "Lower_CI": 12280,
+        "Upper_CI": 15862
+      },
+      {
+        "Month": "July",
+        "Forecast": 14147,
+        "Lower_CI": 12301,
+        "Upper_CI": 15948
+      },
+      {
+        "Month": "August",
+        "Forecast": 14057,
+        "Lower_CI": 12170,
+        "Upper_CI": 15833
+      },
+      {
+        "Month": "September",
+        "Forecast": 14001,
+        "Lower_CI": 12071,
+        "Upper_CI": 15890
+      },
+      {
+        "Month": "October",
+        "Forecast": 14941,
+        "Lower_CI": 12934,
+        "Upper_CI": 16692
+      },
+      {
+        "Month": "November",
+        "Forecast": 16527,
+        "Lower_CI": 14499,
+        "Upper_CI": 18475
+      },
+      {
+        "Month": "December",
+        "Forecast": 22356,
+        "Lower_CI": 20288,
+        "Upper_CI": 24201
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 17752,
+        "Lower_CI": 15801,
+        "Upper_CI": 19746
+      },
+      {
+        "Month": "February",
+        "Forecast": 27230,
+        "Lower_CI": 25103,
+        "Upper_CI": 29422
+      },
+      {
+        "Month": "March",
+        "Forecast": 18266,
+        "Lower_CI": 16409,
+        "Upper_CI": 20195
+      },
+      {
+        "Month": "April",
+        "Forecast": 18232,
+        "Lower_CI": 16341,
+        "Upper_CI": 20142
+      },
+      {
+        "Month": "May",
+        "Forecast": 16211,
+        "Lower_CI": 14335,
+        "Upper_CI": 18117
+      },
+      {
+        "Month": "June",
+        "Forecast": 16216,
+        "Lower_CI": 14428,
+        "Upper_CI": 18306
+      },
+      {
+        "Month": "July",
+        "Forecast": 16105,
+        "Lower_CI": 14179,
+        "Upper_CI": 18003
+      },
+      {
+        "Month": "August",
+        "Forecast": 16162,
+        "Lower_CI": 14158,
+        "Upper_CI": 18040
+      },
+      {
+        "Month": "September",
+        "Forecast": 16209,
+        "Lower_CI": 14168,
+        "Upper_CI": 18245
+      },
+      {
+        "Month": "October",
+        "Forecast": 17065,
+        "Lower_CI": 15020,
+        "Upper_CI": 19069
+      },
+      {
+        "Month": "November",
+        "Forecast": 19025,
+        "Lower_CI": 16954,
+        "Upper_CI": 21138
+      },
+      {
+        "Month": "December",
+        "Forecast": 25673,
+        "Lower_CI": 23407,
+        "Upper_CI": 28033
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 19984,
+        "Lower_CI": 17934,
+        "Upper_CI": 22231
+      },
+      {
+        "Month": "February",
+        "Forecast": 30932,
+        "Lower_CI": 28300,
+        "Upper_CI": 33641
+      },
+      {
+        "Month": "March",
+        "Forecast": 20758,
+        "Lower_CI": 18482,
+        "Upper_CI": 22991
+      },
+      {
+        "Month": "April",
+        "Forecast": 20647,
+        "Lower_CI": 18635,
+        "Upper_CI": 22896
+      },
+      {
+        "Month": "May",
+        "Forecast": 18413,
+        "Lower_CI": 16250,
+        "Upper_CI": 20639
+      },
+      {
+        "Month": "June",
+        "Forecast": 18345,
+        "Lower_CI": 16136,
+        "Upper_CI": 20567
+      },
+      {
+        "Month": "July",
+        "Forecast": 18262,
+        "Lower_CI": 16033,
+        "Upper_CI": 20504
+      },
+      {
+        "Month": "August",
+        "Forecast": 18235,
+        "Lower_CI": 15994,
+        "Upper_CI": 20651
+      },
+      {
+        "Month": "September",
+        "Forecast": 18212,
+        "Lower_CI": 15984,
+        "Upper_CI": 20553
+      },
+      {
+        "Month": "October",
+        "Forecast": 19227,
+        "Lower_CI": 16965,
+        "Upper_CI": 21500
+      },
+      {
+        "Month": "November",
+        "Forecast": 21343,
+        "Lower_CI": 18717,
+        "Upper_CI": 23829
+      },
+      {
+        "Month": "December",
+        "Forecast": 28780,
+        "Lower_CI": 26090,
+        "Upper_CI": 31582
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 22510,
+        "Lower_CI": 20196,
+        "Upper_CI": 25058
+      },
+      {
+        "Month": "February",
+        "Forecast": 34694,
+        "Lower_CI": 31299,
+        "Upper_CI": 37845
+      },
+      {
+        "Month": "March",
+        "Forecast": 23254,
+        "Lower_CI": 20601,
+        "Upper_CI": 25892
+      },
+      {
+        "Month": "April",
+        "Forecast": 23055,
+        "Lower_CI": 20372,
+        "Upper_CI": 25720
+      },
+      {
+        "Month": "May",
+        "Forecast": 20628,
+        "Lower_CI": 17994,
+        "Upper_CI": 23100
+      },
+      {
+        "Month": "June",
+        "Forecast": 20475,
+        "Lower_CI": 17953,
+        "Upper_CI": 23019
+      },
+      {
+        "Month": "July",
+        "Forecast": 20433,
+        "Lower_CI": 17991,
+        "Upper_CI": 23106
+      },
+      {
+        "Month": "August",
+        "Forecast": 20303,
+        "Lower_CI": 17723,
+        "Upper_CI": 22965
+      },
+      {
+        "Month": "September",
+        "Forecast": 20200,
+        "Lower_CI": 17642,
+        "Upper_CI": 22749
+      },
+      {
+        "Month": "October",
+        "Forecast": 21392,
+        "Lower_CI": 18615,
+        "Upper_CI": 24227
+      },
+      {
+        "Month": "November",
+        "Forecast": 23650,
+        "Lower_CI": 20866,
+        "Upper_CI": 26367
+      },
+      {
+        "Month": "December",
+        "Forecast": 31873,
+        "Lower_CI": 28277,
+        "Upper_CI": 35687
+      }
+    ]
+  },
+  "France": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 10990,
+        "Lower_CI": 9342,
+        "Upper_CI": 12639
+      },
+      {
+        "Month": "February",
+        "Forecast": 12048,
+        "Lower_CI": 10241,
+        "Upper_CI": 13855
+      },
+      {
+        "Month": "March",
+        "Forecast": 11293,
+        "Lower_CI": 9599,
+        "Upper_CI": 12987
+      },
+      {
+        "Month": "April",
+        "Forecast": 10546,
+        "Lower_CI": 8964,
+        "Upper_CI": 12128
+      },
+      {
+        "Month": "May",
+        "Forecast": 9854,
+        "Lower_CI": 8376,
+        "Upper_CI": 11332
+      },
+      {
+        "Month": "June",
+        "Forecast": 9851,
+        "Lower_CI": 8373,
+        "Upper_CI": 11328
+      },
+      {
+        "Month": "July",
+        "Forecast": 10522,
+        "Lower_CI": 8944,
+        "Upper_CI": 12100
+      },
+      {
+        "Month": "August",
+        "Forecast": 10523,
+        "Lower_CI": 8944,
+        "Upper_CI": 12101
+      },
+      {
+        "Month": "September",
+        "Forecast": 9862,
+        "Lower_CI": 8383,
+        "Upper_CI": 11342
+      },
+      {
+        "Month": "October",
+        "Forecast": 10217,
+        "Lower_CI": 8684,
+        "Upper_CI": 11750
+      },
+      {
+        "Month": "November",
+        "Forecast": 11276,
+        "Lower_CI": 9585,
+        "Upper_CI": 12967
+      },
+      {
+        "Month": "December",
+        "Forecast": 14951,
+        "Lower_CI": 12708,
+        "Upper_CI": 17194
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 11809,
+        "Lower_CI": 10037,
+        "Upper_CI": 13580
+      },
+      {
+        "Month": "February",
+        "Forecast": 12802,
+        "Lower_CI": 10881,
+        "Upper_CI": 14722
+      },
+      {
+        "Month": "March",
+        "Forecast": 12171,
+        "Lower_CI": 10345,
+        "Upper_CI": 13996
+      },
+      {
+        "Month": "April",
+        "Forecast": 11508,
+        "Lower_CI": 9781,
+        "Upper_CI": 13234
+      },
+      {
+        "Month": "May",
+        "Forecast": 10903,
+        "Lower_CI": 9267,
+        "Upper_CI": 12538
+      },
+      {
+        "Month": "June",
+        "Forecast": 10900,
+        "Lower_CI": 9265,
+        "Upper_CI": 12535
+      },
+      {
+        "Month": "July",
+        "Forecast": 11485,
+        "Lower_CI": 9762,
+        "Upper_CI": 13208
+      },
+      {
+        "Month": "August",
+        "Forecast": 11486,
+        "Lower_CI": 9763,
+        "Upper_CI": 13209
+      },
+      {
+        "Month": "September",
+        "Forecast": 10916,
+        "Lower_CI": 9279,
+        "Upper_CI": 12554
+      },
+      {
+        "Month": "October",
+        "Forecast": 11233,
+        "Lower_CI": 9548,
+        "Upper_CI": 12919
+      },
+      {
+        "Month": "November",
+        "Forecast": 12178,
+        "Lower_CI": 10351,
+        "Upper_CI": 14005
+      },
+      {
+        "Month": "December",
+        "Forecast": 15366,
+        "Lower_CI": 13061,
+        "Upper_CI": 17671
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 12401,
+        "Lower_CI": 10541,
+        "Upper_CI": 14261
+      },
+      {
+        "Month": "February",
+        "Forecast": 13373,
+        "Lower_CI": 11367,
+        "Upper_CI": 15379
+      },
+      {
+        "Month": "March",
+        "Forecast": 12781,
+        "Lower_CI": 10864,
+        "Upper_CI": 14699
+      },
+      {
+        "Month": "April",
+        "Forecast": 12145,
+        "Lower_CI": 10323,
+        "Upper_CI": 13967
+      },
+      {
+        "Month": "May",
+        "Forecast": 11568,
+        "Lower_CI": 9832,
+        "Upper_CI": 13303
+      },
+      {
+        "Month": "June",
+        "Forecast": 11565,
+        "Lower_CI": 9830,
+        "Upper_CI": 13300
+      },
+      {
+        "Month": "July",
+        "Forecast": 12123,
+        "Lower_CI": 10304,
+        "Upper_CI": 13941
+      },
+      {
+        "Month": "August",
+        "Forecast": 12124,
+        "Lower_CI": 10305,
+        "Upper_CI": 13943
+      },
+      {
+        "Month": "September",
+        "Forecast": 11583,
+        "Lower_CI": 9845,
+        "Upper_CI": 13320
+      },
+      {
+        "Month": "October",
+        "Forecast": 11888,
+        "Lower_CI": 10105,
+        "Upper_CI": 13671
+      },
+      {
+        "Month": "November",
+        "Forecast": 12796,
+        "Lower_CI": 10877,
+        "Upper_CI": 14716
+      },
+      {
+        "Month": "December",
+        "Forecast": 15831,
+        "Lower_CI": 13456,
+        "Upper_CI": 18205
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 12921,
+        "Lower_CI": 10983,
+        "Upper_CI": 14860
+      },
+      {
+        "Month": "February",
+        "Forecast": 13887,
+        "Lower_CI": 11804,
+        "Upper_CI": 15970
+      },
+      {
+        "Month": "March",
+        "Forecast": 13308,
+        "Lower_CI": 11312,
+        "Upper_CI": 15304
+      },
+      {
+        "Month": "April",
+        "Forecast": 12680,
+        "Lower_CI": 10778,
+        "Upper_CI": 14582
+      },
+      {
+        "Month": "May",
+        "Forecast": 12111,
+        "Lower_CI": 10294,
+        "Upper_CI": 13928
+      },
+      {
+        "Month": "June",
+        "Forecast": 12109,
+        "Lower_CI": 10292,
+        "Upper_CI": 13925
+      },
+      {
+        "Month": "July",
+        "Forecast": 12658,
+        "Lower_CI": 10759,
+        "Upper_CI": 14556
+      },
+      {
+        "Month": "August",
+        "Forecast": 12659,
+        "Lower_CI": 10760,
+        "Upper_CI": 14558
+      },
+      {
+        "Month": "September",
+        "Forecast": 12127,
+        "Lower_CI": 10308,
+        "Upper_CI": 13946
+      },
+      {
+        "Month": "October",
+        "Forecast": 12428,
+        "Lower_CI": 10564,
+        "Upper_CI": 14293
+      },
+      {
+        "Month": "November",
+        "Forecast": 13325,
+        "Lower_CI": 11326,
+        "Upper_CI": 15324
+      },
+      {
+        "Month": "December",
+        "Forecast": 16311,
+        "Lower_CI": 13864,
+        "Upper_CI": 18758
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 13419,
+        "Lower_CI": 11406,
+        "Upper_CI": 15432
+      },
+      {
+        "Month": "February",
+        "Forecast": 14383,
+        "Lower_CI": 12225,
+        "Upper_CI": 16540
+      },
+      {
+        "Month": "March",
+        "Forecast": 13808,
+        "Lower_CI": 11736,
+        "Upper_CI": 15879
+      },
+      {
+        "Month": "April",
+        "Forecast": 13182,
+        "Lower_CI": 11205,
+        "Upper_CI": 15159
+      },
+      {
+        "Month": "May",
+        "Forecast": 12616,
+        "Lower_CI": 10724,
+        "Upper_CI": 14509
+      },
+      {
+        "Month": "June",
+        "Forecast": 12614,
+        "Lower_CI": 10722,
+        "Upper_CI": 14506
+      },
+      {
+        "Month": "July",
+        "Forecast": 13160,
+        "Lower_CI": 11186,
+        "Upper_CI": 15134
+      },
+      {
+        "Month": "August",
+        "Forecast": 13161,
+        "Lower_CI": 11187,
+        "Upper_CI": 15135
+      },
+      {
+        "Month": "September",
+        "Forecast": 12632,
+        "Lower_CI": 10737,
+        "Upper_CI": 14527
+      },
+      {
+        "Month": "October",
+        "Forecast": 12932,
+        "Lower_CI": 10992,
+        "Upper_CI": 14872
+      },
+      {
+        "Month": "November",
+        "Forecast": 13825,
+        "Lower_CI": 11752,
+        "Upper_CI": 15899
+      },
+      {
+        "Month": "December",
+        "Forecast": 16796,
+        "Lower_CI": 14276,
+        "Upper_CI": 19315
+      }
+    ]
+  },
+  "Germany": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 11447,
+        "Lower_CI": 10239,
+        "Upper_CI": 12668
+      },
+      {
+        "Month": "February",
+        "Forecast": 12686,
+        "Lower_CI": 11528,
+        "Upper_CI": 13962
+      },
+      {
+        "Month": "March",
+        "Forecast": 18412,
+        "Lower_CI": 17109,
+        "Upper_CI": 19591
+      },
+      {
+        "Month": "April",
+        "Forecast": 17091,
+        "Lower_CI": 15888,
+        "Upper_CI": 18367
+      },
+      {
+        "Month": "May",
+        "Forecast": 13294,
+        "Lower_CI": 12107,
+        "Upper_CI": 14481
+      },
+      {
+        "Month": "June",
+        "Forecast": 12049,
+        "Lower_CI": 10842,
+        "Upper_CI": 13229
+      },
+      {
+        "Month": "July",
+        "Forecast": 12098,
+        "Lower_CI": 10902,
+        "Upper_CI": 13464
+      },
+      {
+        "Month": "August",
+        "Forecast": 13445,
+        "Lower_CI": 12307,
+        "Upper_CI": 14678
+      },
+      {
+        "Month": "September",
+        "Forecast": 12155,
+        "Lower_CI": 10914,
+        "Upper_CI": 13408
+      },
+      {
+        "Month": "October",
+        "Forecast": 12873,
+        "Lower_CI": 11635,
+        "Upper_CI": 14076
+      },
+      {
+        "Month": "November",
+        "Forecast": 14940,
+        "Lower_CI": 13628,
+        "Upper_CI": 16173
+      },
+      {
+        "Month": "December",
+        "Forecast": 25230,
+        "Lower_CI": 23853,
+        "Upper_CI": 26473
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 12962,
+        "Lower_CI": 11735,
+        "Upper_CI": 14260
+      },
+      {
+        "Month": "February",
+        "Forecast": 14400,
+        "Lower_CI": 13055,
+        "Upper_CI": 15602
+      },
+      {
+        "Month": "March",
+        "Forecast": 21228,
+        "Lower_CI": 19928,
+        "Upper_CI": 22479
+      },
+      {
+        "Month": "April",
+        "Forecast": 19625,
+        "Lower_CI": 18267,
+        "Upper_CI": 21004
+      },
+      {
+        "Month": "May",
+        "Forecast": 15165,
+        "Lower_CI": 13886,
+        "Upper_CI": 16402
+      },
+      {
+        "Month": "June",
+        "Forecast": 13712,
+        "Lower_CI": 12379,
+        "Upper_CI": 15052
+      },
+      {
+        "Month": "July",
+        "Forecast": 13776,
+        "Lower_CI": 12449,
+        "Upper_CI": 15128
+      },
+      {
+        "Month": "August",
+        "Forecast": 15299,
+        "Lower_CI": 13890,
+        "Upper_CI": 16631
+      },
+      {
+        "Month": "September",
+        "Forecast": 13750,
+        "Lower_CI": 12326,
+        "Upper_CI": 15017
+      },
+      {
+        "Month": "October",
+        "Forecast": 14577,
+        "Lower_CI": 13352,
+        "Upper_CI": 15954
+      },
+      {
+        "Month": "November",
+        "Forecast": 16936,
+        "Lower_CI": 15418,
+        "Upper_CI": 18381
+      },
+      {
+        "Month": "December",
+        "Forecast": 28743,
+        "Lower_CI": 26958,
+        "Upper_CI": 30447
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 14425,
+        "Lower_CI": 12944,
+        "Upper_CI": 15753
+      },
+      {
+        "Month": "February",
+        "Forecast": 16082,
+        "Lower_CI": 14692,
+        "Upper_CI": 17408
+      },
+      {
+        "Month": "March",
+        "Forecast": 23468,
+        "Lower_CI": 21862,
+        "Upper_CI": 25183
+      },
+      {
+        "Month": "April",
+        "Forecast": 21822,
+        "Lower_CI": 20180,
+        "Upper_CI": 23356
+      },
+      {
+        "Month": "May",
+        "Forecast": 17107,
+        "Lower_CI": 15552,
+        "Upper_CI": 18607
+      },
+      {
+        "Month": "June",
+        "Forecast": 15499,
+        "Lower_CI": 14036,
+        "Upper_CI": 17021
+      },
+      {
+        "Month": "July",
+        "Forecast": 15462,
+        "Lower_CI": 13981,
+        "Upper_CI": 16908
+      },
+      {
+        "Month": "August",
+        "Forecast": 17111,
+        "Lower_CI": 15621,
+        "Upper_CI": 18727
+      },
+      {
+        "Month": "September",
+        "Forecast": 15575,
+        "Lower_CI": 14092,
+        "Upper_CI": 17135
+      },
+      {
+        "Month": "October",
+        "Forecast": 16386,
+        "Lower_CI": 15001,
+        "Upper_CI": 18031
+      },
+      {
+        "Month": "November",
+        "Forecast": 18883,
+        "Lower_CI": 17146,
+        "Upper_CI": 20670
+      },
+      {
+        "Month": "December",
+        "Forecast": 31366,
+        "Lower_CI": 29092,
+        "Upper_CI": 33862
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 16805,
+        "Lower_CI": 15104,
+        "Upper_CI": 18447
+      },
+      {
+        "Month": "February",
+        "Forecast": 18486,
+        "Lower_CI": 16533,
+        "Upper_CI": 20277
+      },
+      {
+        "Month": "March",
+        "Forecast": 26282,
+        "Lower_CI": 23916,
+        "Upper_CI": 28369
+      },
+      {
+        "Month": "April",
+        "Forecast": 24362,
+        "Lower_CI": 22088,
+        "Upper_CI": 26445
+      },
+      {
+        "Month": "May",
+        "Forecast": 18982,
+        "Lower_CI": 16972,
+        "Upper_CI": 20757
+      },
+      {
+        "Month": "June",
+        "Forecast": 17161,
+        "Lower_CI": 15332,
+        "Upper_CI": 19000
+      },
+      {
+        "Month": "July",
+        "Forecast": 17138,
+        "Lower_CI": 15159,
+        "Upper_CI": 18939
+      },
+      {
+        "Month": "August",
+        "Forecast": 18967,
+        "Lower_CI": 17034,
+        "Upper_CI": 20857
+      },
+      {
+        "Month": "September",
+        "Forecast": 17168,
+        "Lower_CI": 15292,
+        "Upper_CI": 19025
+      },
+      {
+        "Month": "October",
+        "Forecast": 18085,
+        "Lower_CI": 16085,
+        "Upper_CI": 20151
+      },
+      {
+        "Month": "November",
+        "Forecast": 20871,
+        "Lower_CI": 18683,
+        "Upper_CI": 23079
+      },
+      {
+        "Month": "December",
+        "Forecast": 34898,
+        "Lower_CI": 31339,
+        "Upper_CI": 38289
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 18273,
+        "Lower_CI": 16086,
+        "Upper_CI": 20625
+      },
+      {
+        "Month": "February",
+        "Forecast": 20155,
+        "Lower_CI": 17834,
+        "Upper_CI": 22497
+      },
+      {
+        "Month": "March",
+        "Forecast": 29132,
+        "Lower_CI": 25799,
+        "Upper_CI": 32473
+      },
+      {
+        "Month": "April",
+        "Forecast": 26920,
+        "Lower_CI": 23820,
+        "Upper_CI": 30055
+      },
+      {
+        "Month": "May",
+        "Forecast": 20850,
+        "Lower_CI": 18160,
+        "Upper_CI": 23502
+      },
+      {
+        "Month": "June",
+        "Forecast": 18817,
+        "Lower_CI": 16306,
+        "Upper_CI": 21267
+      },
+      {
+        "Month": "July",
+        "Forecast": 18816,
+        "Lower_CI": 16480,
+        "Upper_CI": 21474
+      },
+      {
+        "Month": "August",
+        "Forecast": 20824,
+        "Lower_CI": 17975,
+        "Upper_CI": 23443
+      },
+      {
+        "Month": "September",
+        "Forecast": 18749,
+        "Lower_CI": 16041,
+        "Upper_CI": 21337
+      },
+      {
+        "Month": "October",
+        "Forecast": 19780,
+        "Lower_CI": 17030,
+        "Upper_CI": 22544
+      },
+      {
+        "Month": "November",
+        "Forecast": 22865,
+        "Lower_CI": 19903,
+        "Upper_CI": 25931
+      },
+      {
+        "Month": "December",
+        "Forecast": 38470,
+        "Lower_CI": 33613,
+        "Upper_CI": 43513
+      }
+    ]
+  },
+  "India": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 21617,
+        "Lower_CI": 18375,
+        "Upper_CI": 24860
+      },
+      {
+        "Month": "February",
+        "Forecast": 28785,
+        "Lower_CI": 24467,
+        "Upper_CI": 33103
+      },
+      {
+        "Month": "March",
+        "Forecast": 39638,
+        "Lower_CI": 33692,
+        "Upper_CI": 45584
+      },
+      {
+        "Month": "April",
+        "Forecast": 41562,
+        "Lower_CI": 35328,
+        "Upper_CI": 47797
+      },
+      {
+        "Month": "May",
+        "Forecast": 40308,
+        "Lower_CI": 34262,
+        "Upper_CI": 46354
+      },
+      {
+        "Month": "June",
+        "Forecast": 35304,
+        "Lower_CI": 30009,
+        "Upper_CI": 40600
+      },
+      {
+        "Month": "July",
+        "Forecast": 38414,
+        "Lower_CI": 32652,
+        "Upper_CI": 44177
+      },
+      {
+        "Month": "August",
+        "Forecast": 40532,
+        "Lower_CI": 34452,
+        "Upper_CI": 46612
+      },
+      {
+        "Month": "September",
+        "Forecast": 39584,
+        "Lower_CI": 33646,
+        "Upper_CI": 45521
+      },
+      {
+        "Month": "October",
+        "Forecast": 40200,
+        "Lower_CI": 34170,
+        "Upper_CI": 46230
+      },
+      {
+        "Month": "November",
+        "Forecast": 42832,
+        "Lower_CI": 36407,
+        "Upper_CI": 49257
+      },
+      {
+        "Month": "December",
+        "Forecast": 40321,
+        "Lower_CI": 34273,
+        "Upper_CI": 46369
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 29332,
+        "Lower_CI": 24932,
+        "Upper_CI": 33732
+      },
+      {
+        "Month": "February",
+        "Forecast": 24780,
+        "Lower_CI": 21063,
+        "Upper_CI": 28497
+      },
+      {
+        "Month": "March",
+        "Forecast": 23730,
+        "Lower_CI": 20170,
+        "Upper_CI": 27289
+      },
+      {
+        "Month": "April",
+        "Forecast": 34708,
+        "Lower_CI": 29502,
+        "Upper_CI": 39914
+      },
+      {
+        "Month": "May",
+        "Forecast": 42714,
+        "Lower_CI": 36307,
+        "Upper_CI": 49121
+      },
+      {
+        "Month": "June",
+        "Forecast": 41494,
+        "Lower_CI": 35270,
+        "Upper_CI": 47718
+      },
+      {
+        "Month": "July",
+        "Forecast": 42643,
+        "Lower_CI": 36247,
+        "Upper_CI": 49040
+      },
+      {
+        "Month": "August",
+        "Forecast": 43611,
+        "Lower_CI": 37069,
+        "Upper_CI": 50153
+      },
+      {
+        "Month": "September",
+        "Forecast": 43621,
+        "Lower_CI": 37078,
+        "Upper_CI": 50165
+      },
+      {
+        "Month": "October",
+        "Forecast": 43705,
+        "Lower_CI": 37149,
+        "Upper_CI": 50260
+      },
+      {
+        "Month": "November",
+        "Forecast": 33568,
+        "Lower_CI": 28533,
+        "Upper_CI": 38603
+      },
+      {
+        "Month": "December",
+        "Forecast": 36441,
+        "Lower_CI": 30975,
+        "Upper_CI": 41907
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 32847,
+        "Lower_CI": 27920,
+        "Upper_CI": 37775
+      },
+      {
+        "Month": "February",
+        "Forecast": 32277,
+        "Lower_CI": 27435,
+        "Upper_CI": 37119
+      },
+      {
+        "Month": "March",
+        "Forecast": 34664,
+        "Lower_CI": 29464,
+        "Upper_CI": 39863
+      },
+      {
+        "Month": "April",
+        "Forecast": 37341,
+        "Lower_CI": 31739,
+        "Upper_CI": 42942
+      },
+      {
+        "Month": "May",
+        "Forecast": 45653,
+        "Lower_CI": 38805,
+        "Upper_CI": 52502
+      },
+      {
+        "Month": "June",
+        "Forecast": 43268,
+        "Lower_CI": 36778,
+        "Upper_CI": 49759
+      },
+      {
+        "Month": "July",
+        "Forecast": 43683,
+        "Lower_CI": 37130,
+        "Upper_CI": 50235
+      },
+      {
+        "Month": "August",
+        "Forecast": 43827,
+        "Lower_CI": 37253,
+        "Upper_CI": 50402
+      },
+      {
+        "Month": "September",
+        "Forecast": 43868,
+        "Lower_CI": 37288,
+        "Upper_CI": 50448
+      },
+      {
+        "Month": "October",
+        "Forecast": 43917,
+        "Lower_CI": 37329,
+        "Upper_CI": 50504
+      },
+      {
+        "Month": "November",
+        "Forecast": 31733,
+        "Lower_CI": 26973,
+        "Upper_CI": 36493
+      },
+      {
+        "Month": "December",
+        "Forecast": 41545,
+        "Lower_CI": 35313,
+        "Upper_CI": 47777
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 36707,
+        "Lower_CI": 31201,
+        "Upper_CI": 42213
+      },
+      {
+        "Month": "February",
+        "Forecast": 32820,
+        "Lower_CI": 27897,
+        "Upper_CI": 37743
+      },
+      {
+        "Month": "March",
+        "Forecast": 31765,
+        "Lower_CI": 27000,
+        "Upper_CI": 36530
+      },
+      {
+        "Month": "April",
+        "Forecast": 38523,
+        "Lower_CI": 32745,
+        "Upper_CI": 44302
+      },
+      {
+        "Month": "May",
+        "Forecast": 35921,
+        "Lower_CI": 30533,
+        "Upper_CI": 41309
+      },
+      {
+        "Month": "June",
+        "Forecast": 43382,
+        "Lower_CI": 36875,
+        "Upper_CI": 49890
+      },
+      {
+        "Month": "July",
+        "Forecast": 34396,
+        "Lower_CI": 29236,
+        "Upper_CI": 39555
+      },
+      {
+        "Month": "August",
+        "Forecast": 31047,
+        "Lower_CI": 26390,
+        "Upper_CI": 35704
+      },
+      {
+        "Month": "September",
+        "Forecast": 28286,
+        "Lower_CI": 24043,
+        "Upper_CI": 32529
+      },
+      {
+        "Month": "October",
+        "Forecast": 28929,
+        "Lower_CI": 24590,
+        "Upper_CI": 33268
+      },
+      {
+        "Month": "November",
+        "Forecast": 36824,
+        "Lower_CI": 31301,
+        "Upper_CI": 42348
+      },
+      {
+        "Month": "December",
+        "Forecast": 49150,
+        "Lower_CI": 41777,
+        "Upper_CI": 56522
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 42576,
+        "Lower_CI": 36190,
+        "Upper_CI": 48963
+      },
+      {
+        "Month": "February",
+        "Forecast": 36298,
+        "Lower_CI": 30854,
+        "Upper_CI": 41743
+      },
+      {
+        "Month": "March",
+        "Forecast": 37879,
+        "Lower_CI": 32197,
+        "Upper_CI": 43561
+      },
+      {
+        "Month": "April",
+        "Forecast": 42730,
+        "Lower_CI": 36320,
+        "Upper_CI": 49139
+      },
+      {
+        "Month": "May",
+        "Forecast": 31625,
+        "Lower_CI": 26881,
+        "Upper_CI": 36369
+      },
+      {
+        "Month": "June",
+        "Forecast": 26171,
+        "Lower_CI": 22245,
+        "Upper_CI": 30097
+      },
+      {
+        "Month": "July",
+        "Forecast": 24131,
+        "Lower_CI": 20511,
+        "Upper_CI": 27751
+      },
+      {
+        "Month": "August",
+        "Forecast": 24403,
+        "Lower_CI": 20742,
+        "Upper_CI": 28063
+      },
+      {
+        "Month": "September",
+        "Forecast": 24665,
+        "Lower_CI": 20965,
+        "Upper_CI": 28365
+      },
+      {
+        "Month": "October",
+        "Forecast": 24769,
+        "Lower_CI": 21053,
+        "Upper_CI": 28484
+      },
+      {
+        "Month": "November",
+        "Forecast": 32648,
+        "Lower_CI": 27751,
+        "Upper_CI": 37545
+      },
+      {
+        "Month": "December",
+        "Forecast": 45428,
+        "Lower_CI": 38614,
+        "Upper_CI": 52242
+      }
+    ]
+  },
+  "Maldives": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 2424,
+        "Lower_CI": 2060,
+        "Upper_CI": 2788
+      },
+      {
+        "Month": "February",
+        "Forecast": 1908,
+        "Lower_CI": 1622,
+        "Upper_CI": 2194
+      },
+      {
+        "Month": "March",
+        "Forecast": 2378,
+        "Lower_CI": 2022,
+        "Upper_CI": 2735
+      },
+      {
+        "Month": "April",
+        "Forecast": 2902,
+        "Lower_CI": 2466,
+        "Upper_CI": 3337
+      },
+      {
+        "Month": "May",
+        "Forecast": 3282,
+        "Lower_CI": 2789,
+        "Upper_CI": 3774
+      },
+      {
+        "Month": "June",
+        "Forecast": 3729,
+        "Lower_CI": 3170,
+        "Upper_CI": 4288
+      },
+      {
+        "Month": "July",
+        "Forecast": 3977,
+        "Lower_CI": 3380,
+        "Upper_CI": 4573
+      },
+      {
+        "Month": "August",
+        "Forecast": 3944,
+        "Lower_CI": 3352,
+        "Upper_CI": 4535
+      },
+      {
+        "Month": "September",
+        "Forecast": 3424,
+        "Lower_CI": 2910,
+        "Upper_CI": 3937
+      },
+      {
+        "Month": "October",
+        "Forecast": 3698,
+        "Lower_CI": 3143,
+        "Upper_CI": 4252
+      },
+      {
+        "Month": "November",
+        "Forecast": 3807,
+        "Lower_CI": 3236,
+        "Upper_CI": 4378
+      },
+      {
+        "Month": "December",
+        "Forecast": 6607,
+        "Lower_CI": 5616,
+        "Upper_CI": 7598
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 3543,
+        "Lower_CI": 3011,
+        "Upper_CI": 4074
+      },
+      {
+        "Month": "February",
+        "Forecast": 3320,
+        "Lower_CI": 2822,
+        "Upper_CI": 3818
+      },
+      {
+        "Month": "March",
+        "Forecast": 3169,
+        "Lower_CI": 2694,
+        "Upper_CI": 3645
+      },
+      {
+        "Month": "April",
+        "Forecast": 3068,
+        "Lower_CI": 2608,
+        "Upper_CI": 3528
+      },
+      {
+        "Month": "May",
+        "Forecast": 3294,
+        "Lower_CI": 2800,
+        "Upper_CI": 3788
+      },
+      {
+        "Month": "June",
+        "Forecast": 4012,
+        "Lower_CI": 3410,
+        "Upper_CI": 4614
+      },
+      {
+        "Month": "July",
+        "Forecast": 4164,
+        "Lower_CI": 3539,
+        "Upper_CI": 4789
+      },
+      {
+        "Month": "August",
+        "Forecast": 4149,
+        "Lower_CI": 3527,
+        "Upper_CI": 4772
+      },
+      {
+        "Month": "September",
+        "Forecast": 3590,
+        "Lower_CI": 3051,
+        "Upper_CI": 4128
+      },
+      {
+        "Month": "October",
+        "Forecast": 3613,
+        "Lower_CI": 3071,
+        "Upper_CI": 4155
+      },
+      {
+        "Month": "November",
+        "Forecast": 3592,
+        "Lower_CI": 3053,
+        "Upper_CI": 4131
+      },
+      {
+        "Month": "December",
+        "Forecast": 5748,
+        "Lower_CI": 4886,
+        "Upper_CI": 6611
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 3373,
+        "Lower_CI": 2867,
+        "Upper_CI": 3879
+      },
+      {
+        "Month": "February",
+        "Forecast": 3341,
+        "Lower_CI": 2839,
+        "Upper_CI": 3842
+      },
+      {
+        "Month": "March",
+        "Forecast": 3364,
+        "Lower_CI": 2860,
+        "Upper_CI": 3869
+      },
+      {
+        "Month": "April",
+        "Forecast": 3370,
+        "Lower_CI": 2864,
+        "Upper_CI": 3875
+      },
+      {
+        "Month": "May",
+        "Forecast": 3476,
+        "Lower_CI": 2955,
+        "Upper_CI": 3998
+      },
+      {
+        "Month": "June",
+        "Forecast": 4083,
+        "Lower_CI": 3470,
+        "Upper_CI": 4695
+      },
+      {
+        "Month": "July",
+        "Forecast": 4127,
+        "Lower_CI": 3508,
+        "Upper_CI": 4746
+      },
+      {
+        "Month": "August",
+        "Forecast": 4024,
+        "Lower_CI": 3420,
+        "Upper_CI": 4628
+      },
+      {
+        "Month": "September",
+        "Forecast": 3635,
+        "Lower_CI": 3090,
+        "Upper_CI": 4181
+      },
+      {
+        "Month": "October",
+        "Forecast": 3616,
+        "Lower_CI": 3074,
+        "Upper_CI": 4159
+      },
+      {
+        "Month": "November",
+        "Forecast": 3592,
+        "Lower_CI": 3053,
+        "Upper_CI": 4131
+      },
+      {
+        "Month": "December",
+        "Forecast": 5497,
+        "Lower_CI": 4672,
+        "Upper_CI": 6321
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 3342,
+        "Lower_CI": 2841,
+        "Upper_CI": 3844
+      },
+      {
+        "Month": "February",
+        "Forecast": 3234,
+        "Lower_CI": 2749,
+        "Upper_CI": 3720
+      },
+      {
+        "Month": "March",
+        "Forecast": 3451,
+        "Lower_CI": 2934,
+        "Upper_CI": 3969
+      },
+      {
+        "Month": "April",
+        "Forecast": 3726,
+        "Lower_CI": 3167,
+        "Upper_CI": 4285
+      },
+      {
+        "Month": "May",
+        "Forecast": 3868,
+        "Lower_CI": 3287,
+        "Upper_CI": 4448
+      },
+      {
+        "Month": "June",
+        "Forecast": 4093,
+        "Lower_CI": 3479,
+        "Upper_CI": 4707
+      },
+      {
+        "Month": "July",
+        "Forecast": 3335,
+        "Lower_CI": 2834,
+        "Upper_CI": 3835
+      },
+      {
+        "Month": "August",
+        "Forecast": 3216,
+        "Lower_CI": 2734,
+        "Upper_CI": 3699
+      },
+      {
+        "Month": "September",
+        "Forecast": 3335,
+        "Lower_CI": 2835,
+        "Upper_CI": 3835
+      },
+      {
+        "Month": "October",
+        "Forecast": 4052,
+        "Lower_CI": 3445,
+        "Upper_CI": 4660
+      },
+      {
+        "Month": "November",
+        "Forecast": 4129,
+        "Lower_CI": 3510,
+        "Upper_CI": 4749
+      },
+      {
+        "Month": "December",
+        "Forecast": 6302,
+        "Lower_CI": 5356,
+        "Upper_CI": 7247
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 3696,
+        "Lower_CI": 3141,
+        "Upper_CI": 4250
+      },
+      {
+        "Month": "February",
+        "Forecast": 3568,
+        "Lower_CI": 3033,
+        "Upper_CI": 4104
+      },
+      {
+        "Month": "March",
+        "Forecast": 3548,
+        "Lower_CI": 3016,
+        "Upper_CI": 4080
+      },
+      {
+        "Month": "April",
+        "Forecast": 3312,
+        "Lower_CI": 2815,
+        "Upper_CI": 3809
+      },
+      {
+        "Month": "May",
+        "Forecast": 3186,
+        "Lower_CI": 2708,
+        "Upper_CI": 3663
+      },
+      {
+        "Month": "June",
+        "Forecast": 3047,
+        "Lower_CI": 2590,
+        "Upper_CI": 3504
+      },
+      {
+        "Month": "July",
+        "Forecast": 3477,
+        "Lower_CI": 2956,
+        "Upper_CI": 3999
+      },
+      {
+        "Month": "August",
+        "Forecast": 3574,
+        "Lower_CI": 3038,
+        "Upper_CI": 4110
+      },
+      {
+        "Month": "September",
+        "Forecast": 3743,
+        "Lower_CI": 3181,
+        "Upper_CI": 4304
+      },
+      {
+        "Month": "October",
+        "Forecast": 4151,
+        "Lower_CI": 3529,
+        "Upper_CI": 4774
+      },
+      {
+        "Month": "November",
+        "Forecast": 3341,
+        "Lower_CI": 2840,
+        "Upper_CI": 3843
+      },
+      {
+        "Month": "December",
+        "Forecast": 5450,
+        "Lower_CI": 4632,
+        "Upper_CI": 6267
+      }
+    ]
+  },
+  "Netherlands": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 4923,
+        "Lower_CI": 4628,
+        "Upper_CI": 5223
+      },
+      {
+        "Month": "February",
+        "Forecast": 5218,
+        "Lower_CI": 4910,
+        "Upper_CI": 5531
+      },
+      {
+        "Month": "March",
+        "Forecast": 5735,
+        "Lower_CI": 5415,
+        "Upper_CI": 6036
+      },
+      {
+        "Month": "April",
+        "Forecast": 5982,
+        "Lower_CI": 5665,
+        "Upper_CI": 6279
+      },
+      {
+        "Month": "May",
+        "Forecast": 6605,
+        "Lower_CI": 6306,
+        "Upper_CI": 6892
+      },
+      {
+        "Month": "June",
+        "Forecast": 7191,
+        "Lower_CI": 6898,
+        "Upper_CI": 7488
+      },
+      {
+        "Month": "July",
+        "Forecast": 9069,
+        "Lower_CI": 8768,
+        "Upper_CI": 9375
+      },
+      {
+        "Month": "August",
+        "Forecast": 8425,
+        "Lower_CI": 8113,
+        "Upper_CI": 8736
+      },
+      {
+        "Month": "September",
+        "Forecast": 6547,
+        "Lower_CI": 6224,
+        "Upper_CI": 6862
+      },
+      {
+        "Month": "October",
+        "Forecast": 5956,
+        "Lower_CI": 5653,
+        "Upper_CI": 6268
+      },
+      {
+        "Month": "November",
+        "Forecast": 5941,
+        "Lower_CI": 5607,
+        "Upper_CI": 6258
+      },
+      {
+        "Month": "December",
+        "Forecast": 7225,
+        "Lower_CI": 6880,
+        "Upper_CI": 7562
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 6048,
+        "Lower_CI": 5710,
+        "Upper_CI": 6373
+      },
+      {
+        "Month": "February",
+        "Forecast": 6342,
+        "Lower_CI": 6001,
+        "Upper_CI": 6673
+      },
+      {
+        "Month": "March",
+        "Forecast": 6986,
+        "Lower_CI": 6628,
+        "Upper_CI": 7342
+      },
+      {
+        "Month": "April",
+        "Forecast": 7232,
+        "Lower_CI": 6864,
+        "Upper_CI": 7595
+      },
+      {
+        "Month": "May",
+        "Forecast": 7999,
+        "Lower_CI": 7587,
+        "Upper_CI": 8391
+      },
+      {
+        "Month": "June",
+        "Forecast": 8657,
+        "Lower_CI": 8265,
+        "Upper_CI": 9071
+      },
+      {
+        "Month": "July",
+        "Forecast": 10968,
+        "Lower_CI": 10470,
+        "Upper_CI": 11466
+      },
+      {
+        "Month": "August",
+        "Forecast": 10111,
+        "Lower_CI": 9587,
+        "Upper_CI": 10627
+      },
+      {
+        "Month": "September",
+        "Forecast": 7783,
+        "Lower_CI": 7331,
+        "Upper_CI": 8215
+      },
+      {
+        "Month": "October",
+        "Forecast": 7108,
+        "Lower_CI": 6653,
+        "Upper_CI": 7539
+      },
+      {
+        "Month": "November",
+        "Forecast": 7064,
+        "Lower_CI": 6612,
+        "Upper_CI": 7538
+      },
+      {
+        "Month": "December",
+        "Forecast": 8629,
+        "Lower_CI": 8119,
+        "Upper_CI": 9150
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 7177,
+        "Lower_CI": 6743,
+        "Upper_CI": 7658
+      },
+      {
+        "Month": "February",
+        "Forecast": 7455,
+        "Lower_CI": 6994,
+        "Upper_CI": 8020
+      },
+      {
+        "Month": "March",
+        "Forecast": 8230,
+        "Lower_CI": 7713,
+        "Upper_CI": 8808
+      },
+      {
+        "Month": "April",
+        "Forecast": 8610,
+        "Lower_CI": 8056,
+        "Upper_CI": 9196
+      },
+      {
+        "Month": "May",
+        "Forecast": 9373,
+        "Lower_CI": 8739,
+        "Upper_CI": 10043
+      },
+      {
+        "Month": "June",
+        "Forecast": 10209,
+        "Lower_CI": 9542,
+        "Upper_CI": 10991
+      },
+      {
+        "Month": "July",
+        "Forecast": 12618,
+        "Lower_CI": 11743,
+        "Upper_CI": 13543
+      },
+      {
+        "Month": "August",
+        "Forecast": 11773,
+        "Lower_CI": 11004,
+        "Upper_CI": 12650
+      },
+      {
+        "Month": "September",
+        "Forecast": 9232,
+        "Lower_CI": 8576,
+        "Upper_CI": 9969
+      },
+      {
+        "Month": "October",
+        "Forecast": 8261,
+        "Lower_CI": 7639,
+        "Upper_CI": 8935
+      },
+      {
+        "Month": "November",
+        "Forecast": 8219,
+        "Lower_CI": 7564,
+        "Upper_CI": 8933
+      },
+      {
+        "Month": "December",
+        "Forecast": 9810,
+        "Lower_CI": 9043,
+        "Upper_CI": 10700
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 8239,
+        "Lower_CI": 7510,
+        "Upper_CI": 8980
+      },
+      {
+        "Month": "February",
+        "Forecast": 8728,
+        "Lower_CI": 7932,
+        "Upper_CI": 9529
+      },
+      {
+        "Month": "March",
+        "Forecast": 9481,
+        "Lower_CI": 8604,
+        "Upper_CI": 10371
+      },
+      {
+        "Month": "April",
+        "Forecast": 9860,
+        "Lower_CI": 8905,
+        "Upper_CI": 10852
+      },
+      {
+        "Month": "May",
+        "Forecast": 10765,
+        "Lower_CI": 9756,
+        "Upper_CI": 11871
+      },
+      {
+        "Month": "June",
+        "Forecast": 11673,
+        "Lower_CI": 10573,
+        "Upper_CI": 12852
+      },
+      {
+        "Month": "July",
+        "Forecast": 14518,
+        "Lower_CI": 13095,
+        "Upper_CI": 15966
+      },
+      {
+        "Month": "August",
+        "Forecast": 13463,
+        "Lower_CI": 12007,
+        "Upper_CI": 14839
+      },
+      {
+        "Month": "September",
+        "Forecast": 10469,
+        "Lower_CI": 9340,
+        "Upper_CI": 11578
+      },
+      {
+        "Month": "October",
+        "Forecast": 9410,
+        "Lower_CI": 8378,
+        "Upper_CI": 10433
+      },
+      {
+        "Month": "November",
+        "Forecast": 9339,
+        "Lower_CI": 8229,
+        "Upper_CI": 10396
+      },
+      {
+        "Month": "December",
+        "Forecast": 11214,
+        "Lower_CI": 9986,
+        "Upper_CI": 12470
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 9370,
+        "Lower_CI": 8369,
+        "Upper_CI": 10481
+      },
+      {
+        "Month": "February",
+        "Forecast": 9842,
+        "Lower_CI": 8749,
+        "Upper_CI": 11058
+      },
+      {
+        "Month": "March",
+        "Forecast": 10733,
+        "Lower_CI": 9472,
+        "Upper_CI": 12079
+      },
+      {
+        "Month": "April",
+        "Forecast": 11100,
+        "Lower_CI": 9802,
+        "Upper_CI": 12511
+      },
+      {
+        "Month": "May",
+        "Forecast": 12160,
+        "Lower_CI": 10672,
+        "Upper_CI": 13710
+      },
+      {
+        "Month": "June",
+        "Forecast": 13132,
+        "Lower_CI": 11504,
+        "Upper_CI": 14827
+      },
+      {
+        "Month": "July",
+        "Forecast": 16437,
+        "Lower_CI": 14425,
+        "Upper_CI": 18578
+      },
+      {
+        "Month": "August",
+        "Forecast": 15153,
+        "Lower_CI": 13216,
+        "Upper_CI": 17170
+      },
+      {
+        "Month": "September",
+        "Forecast": 11689,
+        "Lower_CI": 10168,
+        "Upper_CI": 13293
+      },
+      {
+        "Month": "October",
+        "Forecast": 10560,
+        "Lower_CI": 9168,
+        "Upper_CI": 12046
+      },
+      {
+        "Month": "November",
+        "Forecast": 10459,
+        "Lower_CI": 9036,
+        "Upper_CI": 11967
+      },
+      {
+        "Month": "December",
+        "Forecast": 12635,
+        "Lower_CI": 10871,
+        "Upper_CI": 14413
+      }
+    ]
+  },
+  "Others": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 92659,
+        "Lower_CI": 78760,
+        "Upper_CI": 106558
+      },
+      {
+        "Month": "February",
+        "Forecast": 84737,
+        "Lower_CI": 72026,
+        "Upper_CI": 97448
+      },
+      {
+        "Month": "March",
+        "Forecast": 78724,
+        "Lower_CI": 66915,
+        "Upper_CI": 90533
+      },
+      {
+        "Month": "April",
+        "Forecast": 73292,
+        "Lower_CI": 62298,
+        "Upper_CI": 84286
+      },
+      {
+        "Month": "May",
+        "Forecast": 71030,
+        "Lower_CI": 60375,
+        "Upper_CI": 81684
+      },
+      {
+        "Month": "June",
+        "Forecast": 70972,
+        "Lower_CI": 60326,
+        "Upper_CI": 81617
+      },
+      {
+        "Month": "July",
+        "Forecast": 73002,
+        "Lower_CI": 62052,
+        "Upper_CI": 83953
+      },
+      {
+        "Month": "August",
+        "Forecast": 72992,
+        "Lower_CI": 62043,
+        "Upper_CI": 83941
+      },
+      {
+        "Month": "September",
+        "Forecast": 71588,
+        "Lower_CI": 60850,
+        "Upper_CI": 82326
+      },
+      {
+        "Month": "October",
+        "Forecast": 74442,
+        "Lower_CI": 63276,
+        "Upper_CI": 85608
+      },
+      {
+        "Month": "November",
+        "Forecast": 79559,
+        "Lower_CI": 67625,
+        "Upper_CI": 91493
+      },
+      {
+        "Month": "December",
+        "Forecast": 115199,
+        "Lower_CI": 97919,
+        "Upper_CI": 132478
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 100001,
+        "Lower_CI": 85001,
+        "Upper_CI": 115001
+      },
+      {
+        "Month": "February",
+        "Forecast": 93629,
+        "Lower_CI": 79585,
+        "Upper_CI": 107674
+      },
+      {
+        "Month": "March",
+        "Forecast": 89124,
+        "Lower_CI": 75755,
+        "Upper_CI": 102493
+      },
+      {
+        "Month": "April",
+        "Forecast": 83779,
+        "Lower_CI": 71212,
+        "Upper_CI": 96345
+      },
+      {
+        "Month": "May",
+        "Forecast": 81467,
+        "Lower_CI": 69247,
+        "Upper_CI": 93687
+      },
+      {
+        "Month": "June",
+        "Forecast": 81456,
+        "Lower_CI": 69237,
+        "Upper_CI": 93674
+      },
+      {
+        "Month": "July",
+        "Forecast": 83680,
+        "Lower_CI": 71128,
+        "Upper_CI": 96233
+      },
+      {
+        "Month": "August",
+        "Forecast": 83678,
+        "Lower_CI": 71126,
+        "Upper_CI": 96230
+      },
+      {
+        "Month": "September",
+        "Forecast": 81997,
+        "Lower_CI": 69697,
+        "Upper_CI": 94297
+      },
+      {
+        "Month": "October",
+        "Forecast": 84896,
+        "Lower_CI": 72161,
+        "Upper_CI": 97630
+      },
+      {
+        "Month": "November",
+        "Forecast": 90198,
+        "Lower_CI": 76668,
+        "Upper_CI": 103728
+      },
+      {
+        "Month": "December",
+        "Forecast": 127665,
+        "Lower_CI": 108516,
+        "Upper_CI": 146815
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 112221,
+        "Lower_CI": 95388,
+        "Upper_CI": 129054
+      },
+      {
+        "Month": "February",
+        "Forecast": 105597,
+        "Lower_CI": 89757,
+        "Upper_CI": 121437
+      },
+      {
+        "Month": "March",
+        "Forecast": 100847,
+        "Lower_CI": 85720,
+        "Upper_CI": 115974
+      },
+      {
+        "Month": "April",
+        "Forecast": 95487,
+        "Lower_CI": 81164,
+        "Upper_CI": 109810
+      },
+      {
+        "Month": "May",
+        "Forecast": 93183,
+        "Lower_CI": 79206,
+        "Upper_CI": 107161
+      },
+      {
+        "Month": "June",
+        "Forecast": 93165,
+        "Lower_CI": 79190,
+        "Upper_CI": 107140
+      },
+      {
+        "Month": "July",
+        "Forecast": 95358,
+        "Lower_CI": 81054,
+        "Upper_CI": 109661
+      },
+      {
+        "Month": "August",
+        "Forecast": 95354,
+        "Lower_CI": 81051,
+        "Upper_CI": 109657
+      },
+      {
+        "Month": "September",
+        "Forecast": 93718,
+        "Lower_CI": 79660,
+        "Upper_CI": 107776
+      },
+      {
+        "Month": "October",
+        "Forecast": 96610,
+        "Lower_CI": 82118,
+        "Upper_CI": 111101
+      },
+      {
+        "Month": "November",
+        "Forecast": 101882,
+        "Lower_CI": 86600,
+        "Upper_CI": 117164
+      },
+      {
+        "Month": "December",
+        "Forecast": 139052,
+        "Lower_CI": 118194,
+        "Upper_CI": 159910
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 123648,
+        "Lower_CI": 105100,
+        "Upper_CI": 142195
+      },
+      {
+        "Month": "February",
+        "Forecast": 117065,
+        "Lower_CI": 99505,
+        "Upper_CI": 134624
+      },
+      {
+        "Month": "March",
+        "Forecast": 112354,
+        "Lower_CI": 95501,
+        "Upper_CI": 129207
+      },
+      {
+        "Month": "April",
+        "Forecast": 106997,
+        "Lower_CI": 90947,
+        "Upper_CI": 123046
+      },
+      {
+        "Month": "May",
+        "Forecast": 104692,
+        "Lower_CI": 88988,
+        "Upper_CI": 120396
+      },
+      {
+        "Month": "June",
+        "Forecast": 104674,
+        "Lower_CI": 88973,
+        "Upper_CI": 120376
+      },
+      {
+        "Month": "July",
+        "Forecast": 106873,
+        "Lower_CI": 90842,
+        "Upper_CI": 122903
+      },
+      {
+        "Month": "August",
+        "Forecast": 106869,
+        "Lower_CI": 90839,
+        "Upper_CI": 122900
+      },
+      {
+        "Month": "September",
+        "Forecast": 105226,
+        "Lower_CI": 89442,
+        "Upper_CI": 121010
+      },
+      {
+        "Month": "October",
+        "Forecast": 108119,
+        "Lower_CI": 91901,
+        "Upper_CI": 124336
+      },
+      {
+        "Month": "November",
+        "Forecast": 113396,
+        "Lower_CI": 96386,
+        "Upper_CI": 130405
+      },
+      {
+        "Month": "December",
+        "Forecast": 150614,
+        "Lower_CI": 128022,
+        "Upper_CI": 173206
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 135203,
+        "Lower_CI": 114923,
+        "Upper_CI": 155484
+      },
+      {
+        "Month": "February",
+        "Forecast": 128614,
+        "Lower_CI": 109321,
+        "Upper_CI": 147906
+      },
+      {
+        "Month": "March",
+        "Forecast": 123897,
+        "Lower_CI": 105312,
+        "Upper_CI": 142481
+      },
+      {
+        "Month": "April",
+        "Forecast": 118539,
+        "Lower_CI": 100758,
+        "Upper_CI": 136320
+      },
+      {
+        "Month": "May",
+        "Forecast": 116234,
+        "Lower_CI": 98799,
+        "Upper_CI": 133669
+      },
+      {
+        "Month": "June",
+        "Forecast": 116216,
+        "Lower_CI": 98784,
+        "Upper_CI": 133649
+      },
+      {
+        "Month": "July",
+        "Forecast": 118414,
+        "Lower_CI": 100652,
+        "Upper_CI": 136176
+      },
+      {
+        "Month": "August",
+        "Forecast": 118410,
+        "Lower_CI": 100649,
+        "Upper_CI": 136172
+      },
+      {
+        "Month": "September",
+        "Forecast": 116768,
+        "Lower_CI": 99253,
+        "Upper_CI": 134283
+      },
+      {
+        "Month": "October",
+        "Forecast": 119661,
+        "Lower_CI": 101712,
+        "Upper_CI": 137610
+      },
+      {
+        "Month": "November",
+        "Forecast": 124937,
+        "Lower_CI": 106196,
+        "Upper_CI": 143678
+      },
+      {
+        "Month": "December",
+        "Forecast": 162147,
+        "Lower_CI": 137825,
+        "Upper_CI": 186470
+      }
+    ]
+  },
+  "Russian Federation": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 21833,
+        "Lower_CI": 18558,
+        "Upper_CI": 25108
+      },
+      {
+        "Month": "February",
+        "Forecast": 23438,
+        "Lower_CI": 19923,
+        "Upper_CI": 26954
+      },
+      {
+        "Month": "March",
+        "Forecast": 18666,
+        "Lower_CI": 15866,
+        "Upper_CI": 21466
+      },
+      {
+        "Month": "April",
+        "Forecast": 13903,
+        "Lower_CI": 11818,
+        "Upper_CI": 15989
+      },
+      {
+        "Month": "May",
+        "Forecast": 12370,
+        "Lower_CI": 10514,
+        "Upper_CI": 14225
+      },
+      {
+        "Month": "June",
+        "Forecast": 11622,
+        "Lower_CI": 9878,
+        "Upper_CI": 13365
+      },
+      {
+        "Month": "July",
+        "Forecast": 12447,
+        "Lower_CI": 10580,
+        "Upper_CI": 14314
+      },
+      {
+        "Month": "August",
+        "Forecast": 13266,
+        "Lower_CI": 11276,
+        "Upper_CI": 15256
+      },
+      {
+        "Month": "September",
+        "Forecast": 12553,
+        "Lower_CI": 10670,
+        "Upper_CI": 14436
+      },
+      {
+        "Month": "October",
+        "Forecast": 13427,
+        "Lower_CI": 11413,
+        "Upper_CI": 15441
+      },
+      {
+        "Month": "November",
+        "Forecast": 15908,
+        "Lower_CI": 13522,
+        "Upper_CI": 18294
+      },
+      {
+        "Month": "December",
+        "Forecast": 21731,
+        "Lower_CI": 18471,
+        "Upper_CI": 24990
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 22216,
+        "Lower_CI": 18884,
+        "Upper_CI": 25549
+      },
+      {
+        "Month": "February",
+        "Forecast": 23781,
+        "Lower_CI": 20213,
+        "Upper_CI": 27348
+      },
+      {
+        "Month": "March",
+        "Forecast": 18961,
+        "Lower_CI": 16117,
+        "Upper_CI": 21805
+      },
+      {
+        "Month": "April",
+        "Forecast": 14157,
+        "Lower_CI": 12034,
+        "Upper_CI": 16281
+      },
+      {
+        "Month": "May",
+        "Forecast": 12593,
+        "Lower_CI": 10704,
+        "Upper_CI": 14482
+      },
+      {
+        "Month": "June",
+        "Forecast": 11821,
+        "Lower_CI": 10048,
+        "Upper_CI": 13594
+      },
+      {
+        "Month": "July",
+        "Forecast": 12629,
+        "Lower_CI": 10735,
+        "Upper_CI": 14524
+      },
+      {
+        "Month": "August",
+        "Forecast": 13435,
+        "Lower_CI": 11420,
+        "Upper_CI": 15450
+      },
+      {
+        "Month": "September",
+        "Forecast": 12705,
+        "Lower_CI": 10799,
+        "Upper_CI": 14611
+      },
+      {
+        "Month": "October",
+        "Forecast": 13568,
+        "Lower_CI": 11533,
+        "Upper_CI": 15603
+      },
+      {
+        "Month": "November",
+        "Forecast": 16043,
+        "Lower_CI": 13636,
+        "Upper_CI": 18449
+      },
+      {
+        "Month": "December",
+        "Forecast": 21863,
+        "Lower_CI": 18583,
+        "Upper_CI": 25142
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 22345,
+        "Lower_CI": 18994,
+        "Upper_CI": 25697
+      },
+      {
+        "Month": "February",
+        "Forecast": 23906,
+        "Lower_CI": 20320,
+        "Upper_CI": 27492
+      },
+      {
+        "Month": "March",
+        "Forecast": 19084,
+        "Lower_CI": 16221,
+        "Upper_CI": 21946
+      },
+      {
+        "Month": "April",
+        "Forecast": 14278,
+        "Lower_CI": 12136,
+        "Upper_CI": 16420
+      },
+      {
+        "Month": "May",
+        "Forecast": 12712,
+        "Lower_CI": 10805,
+        "Upper_CI": 14619
+      },
+      {
+        "Month": "June",
+        "Forecast": 11938,
+        "Lower_CI": 10147,
+        "Upper_CI": 13729
+      },
+      {
+        "Month": "July",
+        "Forecast": 12745,
+        "Lower_CI": 10833,
+        "Upper_CI": 14657
+      },
+      {
+        "Month": "August",
+        "Forecast": 13550,
+        "Lower_CI": 11517,
+        "Upper_CI": 15582
+      },
+      {
+        "Month": "September",
+        "Forecast": 12819,
+        "Lower_CI": 10896,
+        "Upper_CI": 14742
+      },
+      {
+        "Month": "October",
+        "Forecast": 13681,
+        "Lower_CI": 11629,
+        "Upper_CI": 15734
+      },
+      {
+        "Month": "November",
+        "Forecast": 16155,
+        "Lower_CI": 13732,
+        "Upper_CI": 18579
+      },
+      {
+        "Month": "December",
+        "Forecast": 21974,
+        "Lower_CI": 18678,
+        "Upper_CI": 25271
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 22457,
+        "Lower_CI": 19088,
+        "Upper_CI": 25825
+      },
+      {
+        "Month": "February",
+        "Forecast": 24017,
+        "Lower_CI": 20414,
+        "Upper_CI": 27619
+      },
+      {
+        "Month": "March",
+        "Forecast": 19194,
+        "Lower_CI": 16315,
+        "Upper_CI": 22073
+      },
+      {
+        "Month": "April",
+        "Forecast": 14388,
+        "Lower_CI": 12230,
+        "Upper_CI": 16547
+      },
+      {
+        "Month": "May",
+        "Forecast": 12822,
+        "Lower_CI": 10899,
+        "Upper_CI": 14745
+      },
+      {
+        "Month": "June",
+        "Forecast": 12048,
+        "Lower_CI": 10241,
+        "Upper_CI": 13855
+      },
+      {
+        "Month": "July",
+        "Forecast": 12855,
+        "Lower_CI": 10926,
+        "Upper_CI": 14783
+      },
+      {
+        "Month": "August",
+        "Forecast": 13659,
+        "Lower_CI": 11610,
+        "Upper_CI": 15708
+      },
+      {
+        "Month": "September",
+        "Forecast": 12928,
+        "Lower_CI": 10989,
+        "Upper_CI": 14868
+      },
+      {
+        "Month": "October",
+        "Forecast": 13791,
+        "Lower_CI": 11722,
+        "Upper_CI": 15859
+      },
+      {
+        "Month": "November",
+        "Forecast": 16265,
+        "Lower_CI": 13825,
+        "Upper_CI": 18704
+      },
+      {
+        "Month": "December",
+        "Forecast": 22084,
+        "Lower_CI": 18771,
+        "Upper_CI": 25396
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 22566,
+        "Lower_CI": 19181,
+        "Upper_CI": 25951
+      },
+      {
+        "Month": "February",
+        "Forecast": 24126,
+        "Lower_CI": 20507,
+        "Upper_CI": 27745
+      },
+      {
+        "Month": "March",
+        "Forecast": 19303,
+        "Lower_CI": 16408,
+        "Upper_CI": 22199
+      },
+      {
+        "Month": "April",
+        "Forecast": 14497,
+        "Lower_CI": 12323,
+        "Upper_CI": 16672
+      },
+      {
+        "Month": "May",
+        "Forecast": 12931,
+        "Lower_CI": 10991,
+        "Upper_CI": 14871
+      },
+      {
+        "Month": "June",
+        "Forecast": 12157,
+        "Lower_CI": 10333,
+        "Upper_CI": 13980
+      },
+      {
+        "Month": "July",
+        "Forecast": 12964,
+        "Lower_CI": 11019,
+        "Upper_CI": 14908
+      },
+      {
+        "Month": "August",
+        "Forecast": 13768,
+        "Lower_CI": 11703,
+        "Upper_CI": 15833
+      },
+      {
+        "Month": "September",
+        "Forecast": 13037,
+        "Lower_CI": 11082,
+        "Upper_CI": 14993
+      },
+      {
+        "Month": "October",
+        "Forecast": 13899,
+        "Lower_CI": 11814,
+        "Upper_CI": 15984
+      },
+      {
+        "Month": "November",
+        "Forecast": 16373,
+        "Lower_CI": 13917,
+        "Upper_CI": 18830
+      },
+      {
+        "Month": "December",
+        "Forecast": 22192,
+        "Lower_CI": 18863,
+        "Upper_CI": 25521
+      }
+    ]
+  },
+  "United Kingdom": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 25425,
+        "Lower_CI": 21611,
+        "Upper_CI": 29239
+      },
+      {
+        "Month": "February",
+        "Forecast": 23223,
+        "Lower_CI": 19740,
+        "Upper_CI": 26707
+      },
+      {
+        "Month": "March",
+        "Forecast": 21479,
+        "Lower_CI": 18257,
+        "Upper_CI": 24701
+      },
+      {
+        "Month": "April",
+        "Forecast": 19825,
+        "Lower_CI": 16851,
+        "Upper_CI": 22798
+      },
+      {
+        "Month": "May",
+        "Forecast": 18291,
+        "Lower_CI": 15547,
+        "Upper_CI": 21035
+      },
+      {
+        "Month": "June",
+        "Forecast": 18247,
+        "Lower_CI": 15510,
+        "Upper_CI": 20984
+      },
+      {
+        "Month": "July",
+        "Forecast": 18950,
+        "Lower_CI": 16108,
+        "Upper_CI": 21793
+      },
+      {
+        "Month": "August",
+        "Forecast": 19663,
+        "Lower_CI": 16714,
+        "Upper_CI": 22613
+      },
+      {
+        "Month": "September",
+        "Forecast": 18238,
+        "Lower_CI": 15502,
+        "Upper_CI": 20974
+      },
+      {
+        "Month": "October",
+        "Forecast": 18982,
+        "Lower_CI": 16135,
+        "Upper_CI": 21830
+      },
+      {
+        "Month": "November",
+        "Forecast": 22610,
+        "Lower_CI": 19218,
+        "Upper_CI": 26001
+      },
+      {
+        "Month": "December",
+        "Forecast": 31234,
+        "Lower_CI": 26548,
+        "Upper_CI": 35919
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 27407,
+        "Lower_CI": 23296,
+        "Upper_CI": 31519
+      },
+      {
+        "Month": "February",
+        "Forecast": 25508,
+        "Lower_CI": 21681,
+        "Upper_CI": 29334
+      },
+      {
+        "Month": "March",
+        "Forecast": 23990,
+        "Lower_CI": 20392,
+        "Upper_CI": 27589
+      },
+      {
+        "Month": "April",
+        "Forecast": 22481,
+        "Lower_CI": 19108,
+        "Upper_CI": 25853
+      },
+      {
+        "Month": "May",
+        "Forecast": 21085,
+        "Lower_CI": 17922,
+        "Upper_CI": 24248
+      },
+      {
+        "Month": "June",
+        "Forecast": 21046,
+        "Lower_CI": 17889,
+        "Upper_CI": 24202
+      },
+      {
+        "Month": "July",
+        "Forecast": 21689,
+        "Lower_CI": 18435,
+        "Upper_CI": 24942
+      },
+      {
+        "Month": "August",
+        "Forecast": 22341,
+        "Lower_CI": 18989,
+        "Upper_CI": 25692
+      },
+      {
+        "Month": "September",
+        "Forecast": 21050,
+        "Lower_CI": 17893,
+        "Upper_CI": 24208
+      },
+      {
+        "Month": "October",
+        "Forecast": 21741,
+        "Lower_CI": 18480,
+        "Upper_CI": 25002
+      },
+      {
+        "Month": "November",
+        "Forecast": 25063,
+        "Lower_CI": 21303,
+        "Upper_CI": 28822
+      },
+      {
+        "Month": "December",
+        "Forecast": 32919,
+        "Lower_CI": 27981,
+        "Upper_CI": 37857
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 29397,
+        "Lower_CI": 24987,
+        "Upper_CI": 33807
+      },
+      {
+        "Month": "February",
+        "Forecast": 27614,
+        "Lower_CI": 23472,
+        "Upper_CI": 31757
+      },
+      {
+        "Month": "March",
+        "Forecast": 26185,
+        "Lower_CI": 22257,
+        "Upper_CI": 30113
+      },
+      {
+        "Month": "April",
+        "Forecast": 24732,
+        "Lower_CI": 21022,
+        "Upper_CI": 28441
+      },
+      {
+        "Month": "May",
+        "Forecast": 23389,
+        "Lower_CI": 19881,
+        "Upper_CI": 26898
+      },
+      {
+        "Month": "June",
+        "Forecast": 23352,
+        "Lower_CI": 19849,
+        "Upper_CI": 26855
+      },
+      {
+        "Month": "July",
+        "Forecast": 23972,
+        "Lower_CI": 20376,
+        "Upper_CI": 27567
+      },
+      {
+        "Month": "August",
+        "Forecast": 24600,
+        "Lower_CI": 20910,
+        "Upper_CI": 28290
+      },
+      {
+        "Month": "September",
+        "Forecast": 23362,
+        "Lower_CI": 19858,
+        "Upper_CI": 26867
+      },
+      {
+        "Month": "October",
+        "Forecast": 24032,
+        "Lower_CI": 20427,
+        "Upper_CI": 27637
+      },
+      {
+        "Month": "November",
+        "Forecast": 27235,
+        "Lower_CI": 23150,
+        "Upper_CI": 31320
+      },
+      {
+        "Month": "December",
+        "Forecast": 34793,
+        "Lower_CI": 29574,
+        "Upper_CI": 40013
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 31389,
+        "Lower_CI": 26681,
+        "Upper_CI": 36098
+      },
+      {
+        "Month": "February",
+        "Forecast": 29652,
+        "Lower_CI": 25204,
+        "Upper_CI": 34100
+      },
+      {
+        "Month": "March",
+        "Forecast": 28257,
+        "Lower_CI": 24018,
+        "Upper_CI": 32496
+      },
+      {
+        "Month": "April",
+        "Forecast": 26826,
+        "Lower_CI": 22802,
+        "Upper_CI": 30849
+      },
+      {
+        "Month": "May",
+        "Forecast": 25504,
+        "Lower_CI": 21678,
+        "Upper_CI": 29330
+      },
+      {
+        "Month": "June",
+        "Forecast": 25467,
+        "Lower_CI": 21647,
+        "Upper_CI": 29288
+      },
+      {
+        "Month": "July",
+        "Forecast": 26078,
+        "Lower_CI": 22166,
+        "Upper_CI": 29990
+      },
+      {
+        "Month": "August",
+        "Forecast": 26697,
+        "Lower_CI": 22692,
+        "Upper_CI": 30701
+      },
+      {
+        "Month": "September",
+        "Forecast": 25480,
+        "Lower_CI": 21658,
+        "Upper_CI": 29302
+      },
+      {
+        "Month": "October",
+        "Forecast": 26142,
+        "Lower_CI": 22220,
+        "Upper_CI": 30063
+      },
+      {
+        "Month": "November",
+        "Forecast": 29298,
+        "Lower_CI": 24903,
+        "Upper_CI": 33693
+      },
+      {
+        "Month": "December",
+        "Forecast": 36741,
+        "Lower_CI": 31230,
+        "Upper_CI": 42252
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 33383,
+        "Lower_CI": 28375,
+        "Upper_CI": 38390
+      },
+      {
+        "Month": "February",
+        "Forecast": 31663,
+        "Lower_CI": 26914,
+        "Upper_CI": 36413
+      },
+      {
+        "Month": "March",
+        "Forecast": 30281,
+        "Lower_CI": 25739,
+        "Upper_CI": 34824
+      },
+      {
+        "Month": "April",
+        "Forecast": 28858,
+        "Lower_CI": 24529,
+        "Upper_CI": 33187
+      },
+      {
+        "Month": "May",
+        "Forecast": 27545,
+        "Lower_CI": 23413,
+        "Upper_CI": 31677
+      },
+      {
+        "Month": "June",
+        "Forecast": 27508,
+        "Lower_CI": 23382,
+        "Upper_CI": 31635
+      },
+      {
+        "Month": "July",
+        "Forecast": 28116,
+        "Lower_CI": 23898,
+        "Upper_CI": 32333
+      },
+      {
+        "Month": "August",
+        "Forecast": 28731,
+        "Lower_CI": 24421,
+        "Upper_CI": 33041
+      },
+      {
+        "Month": "September",
+        "Forecast": 27521,
+        "Lower_CI": 23393,
+        "Upper_CI": 31650
+      },
+      {
+        "Month": "October",
+        "Forecast": 28180,
+        "Lower_CI": 23953,
+        "Upper_CI": 32408
+      },
+      {
+        "Month": "November",
+        "Forecast": 31319,
+        "Lower_CI": 26621,
+        "Upper_CI": 36017
+      },
+      {
+        "Month": "December",
+        "Forecast": 38717,
+        "Lower_CI": 32909,
+        "Upper_CI": 44525
+      }
+    ]
+  },
+  "United States": {
+    "2026": [
+      {
+        "Month": "January",
+        "Forecast": 7415,
+        "Lower_CI": 6919,
+        "Upper_CI": 7917
+      },
+      {
+        "Month": "February",
+        "Forecast": 6798,
+        "Lower_CI": 6286,
+        "Upper_CI": 7277
+      },
+      {
+        "Month": "March",
+        "Forecast": 7735,
+        "Lower_CI": 7261,
+        "Upper_CI": 8248
+      },
+      {
+        "Month": "April",
+        "Forecast": 6428,
+        "Lower_CI": 5945,
+        "Upper_CI": 6905
+      },
+      {
+        "Month": "May",
+        "Forecast": 6125,
+        "Lower_CI": 5616,
+        "Upper_CI": 6589
+      },
+      {
+        "Month": "June",
+        "Forecast": 6444,
+        "Lower_CI": 5979,
+        "Upper_CI": 6889
+      },
+      {
+        "Month": "July",
+        "Forecast": 6797,
+        "Lower_CI": 6294,
+        "Upper_CI": 7267
+      },
+      {
+        "Month": "August",
+        "Forecast": 6798,
+        "Lower_CI": 6310,
+        "Upper_CI": 7282
+      },
+      {
+        "Month": "September",
+        "Forecast": 5806,
+        "Lower_CI": 5348,
+        "Upper_CI": 6281
+      },
+      {
+        "Month": "October",
+        "Forecast": 6184,
+        "Lower_CI": 5698,
+        "Upper_CI": 6657
+      },
+      {
+        "Month": "November",
+        "Forecast": 6869,
+        "Lower_CI": 6373,
+        "Upper_CI": 7367
+      },
+      {
+        "Month": "December",
+        "Forecast": 11724,
+        "Lower_CI": 11193,
+        "Upper_CI": 12195
+      }
+    ],
+    "2027": [
+      {
+        "Month": "January",
+        "Forecast": 8495,
+        "Lower_CI": 7984,
+        "Upper_CI": 9005
+      },
+      {
+        "Month": "February",
+        "Forecast": 7685,
+        "Lower_CI": 7166,
+        "Upper_CI": 8227
+      },
+      {
+        "Month": "March",
+        "Forecast": 9142,
+        "Lower_CI": 8601,
+        "Upper_CI": 9676
+      },
+      {
+        "Month": "April",
+        "Forecast": 7491,
+        "Lower_CI": 6979,
+        "Upper_CI": 7995
+      },
+      {
+        "Month": "May",
+        "Forecast": 7111,
+        "Lower_CI": 6551,
+        "Upper_CI": 7669
+      },
+      {
+        "Month": "June",
+        "Forecast": 7444,
+        "Lower_CI": 6895,
+        "Upper_CI": 7978
+      },
+      {
+        "Month": "July",
+        "Forecast": 7869,
+        "Lower_CI": 7351,
+        "Upper_CI": 8443
+      },
+      {
+        "Month": "August",
+        "Forecast": 7818,
+        "Lower_CI": 7221,
+        "Upper_CI": 8385
+      },
+      {
+        "Month": "September",
+        "Forecast": 6569,
+        "Lower_CI": 6017,
+        "Upper_CI": 7116
+      },
+      {
+        "Month": "October",
+        "Forecast": 7063,
+        "Lower_CI": 6494,
+        "Upper_CI": 7635
+      },
+      {
+        "Month": "November",
+        "Forecast": 7873,
+        "Lower_CI": 7324,
+        "Upper_CI": 8512
+      },
+      {
+        "Month": "December",
+        "Forecast": 13769,
+        "Lower_CI": 12957,
+        "Upper_CI": 14521
+      }
+    ],
+    "2028": [
+      {
+        "Month": "January",
+        "Forecast": 9523,
+        "Lower_CI": 8853,
+        "Upper_CI": 10228
+      },
+      {
+        "Month": "February",
+        "Forecast": 8510,
+        "Lower_CI": 7879,
+        "Upper_CI": 9198
+      },
+      {
+        "Month": "March",
+        "Forecast": 9912,
+        "Lower_CI": 9165,
+        "Upper_CI": 10655
+      },
+      {
+        "Month": "April",
+        "Forecast": 8410,
+        "Lower_CI": 7761,
+        "Upper_CI": 9117
+      },
+      {
+        "Month": "May",
+        "Forecast": 8016,
+        "Lower_CI": 7315,
+        "Upper_CI": 8666
+      },
+      {
+        "Month": "June",
+        "Forecast": 8462,
+        "Lower_CI": 7729,
+        "Upper_CI": 9164
+      },
+      {
+        "Month": "July",
+        "Forecast": 8828,
+        "Lower_CI": 8047,
+        "Upper_CI": 9633
+      },
+      {
+        "Month": "August",
+        "Forecast": 8889,
+        "Lower_CI": 8115,
+        "Upper_CI": 9687
+      },
+      {
+        "Month": "September",
+        "Forecast": 7796,
+        "Lower_CI": 7047,
+        "Upper_CI": 8549
+      },
+      {
+        "Month": "October",
+        "Forecast": 8113,
+        "Lower_CI": 7311,
+        "Upper_CI": 8859
+      },
+      {
+        "Month": "November",
+        "Forecast": 8907,
+        "Lower_CI": 8051,
+        "Upper_CI": 9736
+      },
+      {
+        "Month": "December",
+        "Forecast": 14310,
+        "Lower_CI": 13030,
+        "Upper_CI": 15521
+      }
+    ],
+    "2029": [
+      {
+        "Month": "January",
+        "Forecast": 11315,
+        "Lower_CI": 10309,
+        "Upper_CI": 12373
+      },
+      {
+        "Month": "February",
+        "Forecast": 10450,
+        "Lower_CI": 9450,
+        "Upper_CI": 11395
+      },
+      {
+        "Month": "March",
+        "Forecast": 11312,
+        "Lower_CI": 10274,
+        "Upper_CI": 12349
+      },
+      {
+        "Month": "April",
+        "Forecast": 9473,
+        "Lower_CI": 8524,
+        "Upper_CI": 10459
+      },
+      {
+        "Month": "May",
+        "Forecast": 9004,
+        "Lower_CI": 8100,
+        "Upper_CI": 9934
+      },
+      {
+        "Month": "June",
+        "Forecast": 9463,
+        "Lower_CI": 8513,
+        "Upper_CI": 10429
+      },
+      {
+        "Month": "July",
+        "Forecast": 9903,
+        "Lower_CI": 8949,
+        "Upper_CI": 10962
+      },
+      {
+        "Month": "August",
+        "Forecast": 9913,
+        "Lower_CI": 8918,
+        "Upper_CI": 10980
+      },
+      {
+        "Month": "September",
+        "Forecast": 8558,
+        "Lower_CI": 7560,
+        "Upper_CI": 9534
+      },
+      {
+        "Month": "October",
+        "Forecast": 8985,
+        "Lower_CI": 7987,
+        "Upper_CI": 10041
+      },
+      {
+        "Month": "November",
+        "Forecast": 9897,
+        "Lower_CI": 8759,
+        "Upper_CI": 11055
+      },
+      {
+        "Month": "December",
+        "Forecast": 16367,
+        "Lower_CI": 14521,
+        "Upper_CI": 18133
+      }
+    ],
+    "2030": [
+      {
+        "Month": "January",
+        "Forecast": 12360,
+        "Lower_CI": 10955,
+        "Upper_CI": 13783
+      },
+      {
+        "Month": "February",
+        "Forecast": 11269,
+        "Lower_CI": 9923,
+        "Upper_CI": 12599
+      },
+      {
+        "Month": "March",
+        "Forecast": 12758,
+        "Lower_CI": 11251,
+        "Upper_CI": 14310
+      },
+      {
+        "Month": "April",
+        "Forecast": 10546,
+        "Lower_CI": 9183,
+        "Upper_CI": 11874
+      },
+      {
+        "Month": "May",
+        "Forecast": 9997,
+        "Lower_CI": 8616,
+        "Upper_CI": 11293
+      },
+      {
+        "Month": "June",
+        "Forecast": 10464,
+        "Lower_CI": 9060,
+        "Upper_CI": 11843
+      },
+      {
+        "Month": "July",
+        "Forecast": 10984,
+        "Lower_CI": 9513,
+        "Upper_CI": 12388
+      },
+      {
+        "Month": "August",
+        "Forecast": 10932,
+        "Lower_CI": 9456,
+        "Upper_CI": 12441
+      },
+      {
+        "Month": "September",
+        "Forecast": 9292,
+        "Lower_CI": 8016,
+        "Upper_CI": 10527
+      },
+      {
+        "Month": "October",
+        "Forecast": 9851,
+        "Lower_CI": 8471,
+        "Upper_CI": 11274
+      },
+      {
+        "Month": "November",
+        "Forecast": 10892,
+        "Lower_CI": 9355,
+        "Upper_CI": 12484
+      },
+      {
+        "Month": "December",
+        "Forecast": 18508,
+        "Lower_CI": 15935,
+        "Upper_CI": 21173
+      }
+    ]
+  }
+}

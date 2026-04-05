@@ -1,0 +1,47 @@
+[
+  {
+    "district": "Kandy",
+    "regional_demand_score_sum": 284793440,
+    "regional_demand_score_percentage": 41.10
+  },
+  {
+    "district": "Colombo",
+    "regional_demand_score_sum": 230078035,
+    "regional_demand_score_percentage": 33.20
+  },
+  {
+    "district": "Anuradhapura",
+    "regional_demand_score_sum": 89538394,
+    "regional_demand_score_percentage": 12.90
+  },
+  {
+    "district": "Hambantota",
+    "regional_demand_score_sum": 40638374,
+    "regional_demand_score_percentage": 5.90
+  },
+  {
+    "district": "Nuwara Eliya",
+    "regional_demand_score_sum": 16409071,
+    "regional_demand_score_percentage": 2.40
+  },
+  {
+    "district": "Galle",
+    "regional_demand_score_sum": 15287185,
+    "regional_demand_score_percentage": 2.20
+  },
+  {
+    "district": "Polonnaruwa",
+    "regional_demand_score_sum": 12711930,
+    "regional_demand_score_percentage": 1.80
+  },
+  {
+    "district": "Puttalam",
+    "regional_demand_score_sum": 3748346,
+    "regional_demand_score_percentage": 0.50
+  },
+  {
+    "district": "Ampara",
+    "regional_demand_score_sum": 495588,
+    "regional_demand_score_percentage": 0.10
+  }
+]
