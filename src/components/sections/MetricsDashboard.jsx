@@ -4,34 +4,48 @@ import { Card, CardContent } from '../ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { keyMetrics } from '../../data/sampleData';
 
-export default function MetricsDashboard() {
+const formatMillions = (value) => `${(value / 1_000_000).toFixed(3)}M`;
+const formatNumber = (value) => new Intl.NumberFormat().format(value);
+
+export default function MetricsDashboard({ arrivalsData, loading }) {
   const [selectedYear, setSelectedYear] = useState('2025');
+  const insights = arrivalsData?.insights;
+  const yearly = arrivalsData?.yearly_totals || [];
+  const latestYearData = yearly[yearly.length - 1];
+  const selectedData = yearly.find((entry) => String(entry.year) === selectedYear);
+
+  const computedGrowth =
+    yearly.length >= 2
+      ? (((yearly[yearly.length - 1].total_arrivals - yearly[yearly.length - 2].total_arrivals) /
+          yearly[yearly.length - 2].total_arrivals) *
+          100).toFixed(1)
+      : null;
 
   const metrics = [
     {
       title: 'Tourist Arrivals',
-      value: keyMetrics.arrivals2025,
+      value: selectedData ? formatMillions(selectedData.total_arrivals) : keyMetrics.arrivals2025,
       icon: Users,
       gradient: 'from-blue-500 to-cyan-500',
       bgGradient: 'from-blue-50 to-cyan-50',
     },
     {
       title: 'Forecast Growth',
-      value: keyMetrics.forecastGrowth,
+      value: computedGrowth ? `${computedGrowth}%` : keyMetrics.forecastGrowth,
       icon: TrendingUp,
       gradient: 'from-green-500 to-emerald-500',
       bgGradient: 'from-green-50 to-emerald-50',
     },
     {
-      title: 'Tourism Revenue',
-      value: keyMetrics.revenue2025,
+      title: 'Latest Total Arrivals',
+      value: latestYearData ? formatNumber(latestYearData.total_arrivals) : keyMetrics.revenue2025,
       icon: DollarSign,
       gradient: 'from-purple-500 to-pink-500',
       bgGradient: 'from-purple-50 to-pink-50',
     },
     {
-      title: 'Top District',
-      value: keyMetrics.topDistrict,
+      title: 'Peak Month',
+      value: insights ? `${insights.peak_month.month} ${insights.peak_month.year}` : keyMetrics.topDistrict,
       icon: MapPin,
       gradient: 'from-orange-500 to-red-500',
       bgGradient: 'from-orange-50 to-red-50',
@@ -46,15 +60,18 @@ export default function MetricsDashboard() {
             <SelectValue placeholder="Year" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="2025">2025</SelectItem>
-            <SelectItem value="2026">2026</SelectItem>
-            <SelectItem value="2027">2027</SelectItem>
-            <SelectItem value="2028">2028</SelectItem>
-            <SelectItem value="2029">2029</SelectItem>
-            <SelectItem value="2030">2030</SelectItem>
+            {(arrivalsData?.insights?.available_years || [2025]).map((year) => (
+              <SelectItem key={year} value={String(year)}>
+                {year}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>
+
+      {loading && (
+        <p className="text-sm text-gray-500 mb-4">Loading arrivals insights from Samha backend...</p>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {metrics.map((metric, index) => {

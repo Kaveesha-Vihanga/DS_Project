@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-04-27T02:34:34.469651",
+    "inputs": {
+      "area": "Colombo 00500",
+      "budget_score": 40.0,
+      "location_score": 84.0,
+      "demand_score": 74.0,
+      "competition_score": 37.78,
+      "facilities_score": 60.24,
+      "star_rating": 4,
+      "num_rooms": 20,
+      "hotel_type": "Hotel",
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Pool"
+      ]
+    },
+    "scores": {
+      "fuzzy_score": 65.69,
+      "topsis_score": 60.07,
+      "final_score": 63.44
+    },
+    "recommendation": "Neutral",
+    "risk_level": "Moderate-High Risk"
+  }
+]

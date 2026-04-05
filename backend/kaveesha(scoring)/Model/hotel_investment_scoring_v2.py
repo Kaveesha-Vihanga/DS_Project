@@ -5,8 +5,43 @@ from skfuzzy import control as ctrl
 import json
 import os
 from datetime import datetime
+import re
 
 OUTPUT_FILE = "backend/data/investment_results.json"
+METHMI_DATA_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
+    "methmi(facility)",
+    "json.json",
+)
+
+
+def _clamp(value, minimum=0.0, maximum=100.0):
+    return max(minimum, min(maximum, float(value)))
+
+
+def _sanitize_js_object(raw_text):
+    clean = re.sub(r"^\s*const\s+\w+\s*=\s*", "", raw_text)
+    clean = re.sub(r";\s*$", "", clean.strip(), flags=re.MULTILINE)
+    clean = re.sub(r"//.*", "", clean)
+    clean = re.sub(r'([{\[,]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:', r'\1"\2":', clean)
+    return clean
+
+
+def _load_methmi_area_data():
+    if not os.path.exists(METHMI_DATA_FILE):
+        return []
+    with open(METHMI_DATA_FILE, "r", encoding="utf-8") as f:
+        raw = f.read()
+    sanitized = _sanitize_js_object(raw)
+    return json.loads(sanitized)
+
+
+def _get_area_facility_coverage(area):
+    area_data = _load_methmi_area_data()
+    selected = next((item for item in area_data if item.get("area") == area), None)
+    if not selected or "facilities" not in selected:
+        return {}
+    return {k.lower(): float(v) for k, v in selected["facilities"].items()}
 
 # ─────────────────────────────────────────
 # FUZZY LOGIC SETUP
@@ -113,24 +148,62 @@ def run_topsis(criteria_matrix, weights, beneficial):
     return scores.tolist()
 
 def run_model(input_data):
-    # use values from input_data
-    area = input_data.get("area")
-    budget = input_data.get("budget")
-    star_rating = input_data.get("star_rating")
-    rooms = input_data.get("rooms")
+    area = input_data.get("area", "")
+    budget = float(input_data.get("budget", 50))
+    star_rating = int(input_data.get("star_rating", 3))
+    rooms = int(input_data.get("rooms", 20))
+    year = int(input_data.get("year", 2026))
+    amenities = input_data.get("facilities", []) or []
+    hotel_type = input_data.get("property_type", "Hotel")
 
-    # call your existing fuzzy / topsis / scoring logic here
-    # replace the example below with your real logic
-    result = {
-        "area": area,
-        "budget": budget,
-        "star_rating": star_rating,
-        "rooms": rooms,
-        "score": 82.5,
-        "recommendation": "Good investment"
+    budget_score = _clamp((budget / 200.0) * 100.0)
+    location_score = 84.0 if "colombo" in str(area).lower() else 68.0
+    demand_score = _clamp(56.0 + ((year - 2025) * 2.0) + (star_rating * 4.0))
+
+    area_facilities = _get_area_facility_coverage(area)
+    if area_facilities:
+        area_facility_avg = float(np.mean(list(area_facilities.values())))
+    else:
+        area_facility_avg = 62.0
+
+    user_facility_ratio = (len(amenities) / 10.0) * 100.0
+    facilities_score = _clamp((area_facility_avg * 0.7) + (user_facility_ratio * 0.3))
+    competition_score = _clamp(100.0 - (area_facility_avg * 0.85))
+
+    scoring_result = run_scoring(
+        area=area,
+        budget_score_input=budget_score,
+        location_score_input=location_score,
+        demand_score_input=demand_score,
+        competition_score_input=competition_score,
+        facilities_score_input=facilities_score,
+        star_rating=star_rating,
+        num_rooms=rooms,
+        hotel_type=hotel_type,
+        amenities=amenities,
+    )
+
+    final_score = float(scoring_result["scores"]["final_score"])
+    drivers = {
+        "future_demand_fit": round(_clamp(demand_score) / 100.0, 4),
+        "price_fit_vs_median": round(1.0 - (abs(budget - 95.0) / 150.0), 4),
+        "facility_completeness": round(_clamp(facilities_score) / 100.0, 4),
+        "gap_alignment": round(_clamp(location_score - (competition_score * 0.3)) / 100.0, 4),
+        "surplus_risk": round(_clamp(competition_score) / 100.0, 4),
+        "area_median_price": 95,
     }
+    drivers["price_fit_vs_median"] = float(_clamp(drivers["price_fit_vs_median"], 0.0, 1.0))
 
-    return result
+    return {
+        "investment_score_0_100": round(final_score, 2),
+        "score": round(final_score, 2),
+        "recommendation": scoring_result["recommendation"],
+        "risk_level": scoring_result["risk_level"],
+        "drivers": drivers,
+        "future_demand_pct": int(round(drivers["future_demand_fit"] * 100)),
+        "expected_revenue_index": round((drivers["price_fit_vs_median"] + drivers["facility_completeness"]) / 2.0, 4),
+        "regional_demand_pct": int(round(((location_score + demand_score) / 2.0))),
+    }
 # ─────────────────────────────────────────
 # MAIN SCORING FUNCTION
 # ─────────────────────────────────────────

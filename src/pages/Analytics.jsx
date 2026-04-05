@@ -226,7 +226,7 @@
 // }
 
 
-import { useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -238,33 +238,134 @@ import { Badge } from '../components/ui/badge';
 import { Loader2, Download, CheckCircle2, AlertTriangle, XCircle } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { toast } from 'sonner';
-import { MOCK_RESULT, districtData, facilityGapData } from '../data/sampleData';
+import { MOCK_RESULT } from '../data/sampleData';
+import { fetchFacilityInsights } from '../api/reviewScoreApi';
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+const RESULT_STORAGE_KEY = 'investment_scoring_latest_result';
+const CONTEXT_STORAGE_KEY = 'investment_scoring_latest_context';
+
+const toUnitRange = (value, fallback) => {
+  const numeric = Number(value);
+  if (Number.isNaN(numeric)) return fallback;
+  return Math.max(0, Math.min(1, numeric));
+};
+
+const toPercent = (value, fallback) => {
+  const numeric = Number(value);
+  if (Number.isNaN(numeric)) return fallback;
+  return Math.max(0, Math.min(100, numeric));
+};
+
+const normalizeBackendResult = (payload) => {
+  const apiData = payload?.data || payload || {};
+  const fallback = MOCK_RESULT;
+  const score = toPercent(apiData.investment_score_0_100 ?? apiData.score, fallback.investment_score_0_100);
+  const normalizedDrivers = {
+    ...fallback.drivers,
+    ...(apiData.drivers || {}),
+  };
+
+  return {
+    ...fallback,
+    ...apiData,
+    investment_score_0_100: score,
+    drivers: {
+      ...normalizedDrivers,
+      future_demand_fit: toUnitRange(normalizedDrivers.future_demand_fit, fallback.drivers.future_demand_fit),
+      price_fit_vs_median: toUnitRange(normalizedDrivers.price_fit_vs_median, fallback.drivers.price_fit_vs_median),
+      facility_completeness: toUnitRange(normalizedDrivers.facility_completeness, fallback.drivers.facility_completeness),
+      gap_alignment: toUnitRange(normalizedDrivers.gap_alignment, fallback.drivers.gap_alignment),
+      surplus_risk: toUnitRange(normalizedDrivers.surplus_risk, fallback.drivers.surplus_risk),
+      area_median_price: Number(normalizedDrivers.area_median_price ?? fallback.drivers.area_median_price),
+    },
+    future_demand_pct: toPercent(apiData.future_demand_pct, fallback.future_demand_pct),
+    expected_revenue_index: toUnitRange(apiData.expected_revenue_index, fallback.expected_revenue_index),
+    regional_demand_pct: toPercent(apiData.regional_demand_pct, fallback.regional_demand_pct),
+  };
+};
 
 export default function InvestmentScoring() {
   const [formData, setFormData] = useState({
     year: 2026,
-    district: '',
+    district: 'Colombo',
     area: '',
-    property_type: '',
     stars: 3,
     price_per_night: 50,
     facilities: [],
   });
 
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(() => {
+    try {
+      const saved = localStorage.getItem(RESULT_STORAGE_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+  const [analysisContext, setAnalysisContext] = useState(() => {
+    try {
+      const saved = localStorage.getItem(CONTEXT_STORAGE_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+  const latestRequestIdRef = useRef(0);
   const [availableAreas, setAvailableAreas] = useState([]);
+  const [areasLoading, setAreasLoading] = useState(true);
+  const [areaFacilityData, setAreaFacilityData] = useState([]);
 
-  const propertyTypes = ['Hotel', 'Villa', 'Resort', 'Boutique Hotel', 'Guesthouse'];
   const allFacilities = [
     'WiFi', 'AC', 'Pool', 'Spa', 'Gym', 
     'Restaurant', 'Bar', 'Parking', 'Room Service', 'Beach Access'
   ];
 
-  const handleDistrictChange = (district) => {
-    setFormData({ ...formData, district, area: '' });
-    setAvailableAreas(districtData[district] || []);
-  };
+  useEffect(() => {
+    let mounted = true;
+    const loadMethmiAreas = async () => {
+      try {
+        const facilityInsights = await fetchFacilityInsights();
+        if (!mounted) return;
+        setAreaFacilityData(facilityInsights);
+        const colomboAreas = facilityInsights.map((item) => item.area).sort((a, b) => a.localeCompare(b));
+        setAvailableAreas(colomboAreas);
+        setFormData((prev) =>
+          prev.area || colomboAreas.length === 0 ? prev : { ...prev, area: colomboAreas[0] }
+        );
+      } catch (error) {
+        toast.error('Unable to load Colombo area list from Methmi data.');
+      } finally {
+        if (mounted) setAreasLoading(false);
+      }
+    };
+
+    loadMethmiAreas();
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    try {
+      if (result) {
+        localStorage.setItem(RESULT_STORAGE_KEY, JSON.stringify(result));
+      }
+    } catch {
+      // ignore storage failures silently
+    }
+  }, [result]);
+
+  useEffect(() => {
+    try {
+      if (analysisContext) {
+        localStorage.setItem(CONTEXT_STORAGE_KEY, JSON.stringify(analysisContext));
+      }
+    } catch {
+      // ignore storage failures silently
+    }
+  }, [analysisContext]);
 
   const toggleFacility = (facility) => {
     const updated = formData.facilities.includes(facility)
@@ -275,53 +376,56 @@ export default function InvestmentScoring() {
 
   const handleSubmit = async () => {
     setLoading(true);
+    const requestId = Date.now();
+    latestRequestIdRef.current = requestId;
     
     try {
-      // Try calling the backend
-      const response = await fetch('http://localhost:8000/score', {
+      const payload = {
+        ...formData,
+        property_type: 'Hotel',
+        star_rating: formData.stars,
+        budget: formData.price_per_night,
+        rooms: 20,
+      };
+
+      const response = await fetch(`${API_BASE_URL}/api/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        setResult(data);
-      } else {
-        throw new Error('Backend not available');
+      if (!response.ok) {
+        throw new Error(`Request failed: ${response.status}`);
       }
+
+      const data = await response.json();
+      if (data?.success === false) {
+        throw new Error(data?.error || 'Prediction failed');
+      }
+      if (latestRequestIdRef.current === requestId) {
+        setResult(normalizeBackendResult(data));
+        setAnalysisContext({
+          year: formData.year,
+          area: formData.area,
+          stars: formData.stars,
+          budget: formData.price_per_night,
+        });
+      }
+      toast.success('Investment analysis completed');
     } catch (error) {
-      // Use mock data if backend is not available
-      console.log('Using mock data');
-      setTimeout(() => {
-        setResult(MOCK_RESULT);
-      }, 1500);
+      if (latestRequestIdRef.current === requestId) {
+        setResult((prev) => prev || MOCK_RESULT);
+      }
+      toast.error(`Investment analysis failed: ${error.message}. Showing latest available result.`);
     } finally {
-      setTimeout(() => setLoading(false), 1500);
+      if (latestRequestIdRef.current === requestId) {
+        setLoading(false);
+      }
     }
   };
 
   const handleDownloadReport = async () => {
-    try {
-      const response = await fetch('http://localhost:8000/generate-report?' + new URLSearchParams(formData));
-      
-      if (response.ok) {
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'investment_report.pdf';
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url);
-        document.body.removeChild(a);
-        toast.success('Report downloaded successfully!');
-      } else {
-        throw new Error('Backend not available');
-      }
-    } catch (error) {
-      toast.info('PDF generation requires backend connection');
-    }
+    toast.info('PDF report endpoint is not connected yet.');
   };
 
   const getScoreDetails = (score) => {
@@ -369,6 +473,85 @@ export default function InvestmentScoring() {
     { name: 'Quality', value: formData.stars / 5 },
   ] : [];
 
+  const selectedAreaFacilityCoverage = useMemo(() => {
+    const areaForInsights = formData.area || analysisContext?.area || '';
+    const entry = areaFacilityData.find((item) => item.area === areaForInsights);
+    if (!entry?.facilities) return [];
+
+    return Object.entries(entry.facilities).map(([facility, coverage]) => ({
+      facility: facility.toUpperCase(),
+      coverage: Number(coverage),
+    }));
+  }, [areaFacilityData, formData.area, analysisContext]);
+
+  const analysisArea = formData.area || analysisContext?.area || 'selected area';
+  const analysisYear = formData.year || analysisContext?.year || '';
+  const analysisBudget = formData.price_per_night || analysisContext?.budget || 0;
+  const analysisStars = formData.stars || analysisContext?.stars || 3;
+
+  const budgetSuggestion = useMemo(() => {
+    if (!result?.drivers?.area_median_price) return null;
+    const median = Number(result.drivers.area_median_price);
+    if (!median || Number.isNaN(median)) return null;
+
+    const budget = Number(formData.price_per_night);
+    const gap = budget - median;
+    const gapPct = (Math.abs(gap) / median) * 100;
+    const suggestedBudget = Math.round(median);
+    const estimatedLift = Math.min(12, (gapPct / 100) * 20).toFixed(1);
+
+    if (Math.abs(gap) <= 3) {
+      return {
+        text: `Your budget is aligned with the local median (${suggestedBudget} USD/night), so pricing fit is already strong.`,
+        lift: '0.0',
+      };
+    }
+
+    const direction = gap > 0 ? 'decrease' : 'increase';
+    return {
+      text: `A better price-fit strategy is to ${direction} budget toward ${suggestedBudget} USD/night for ${analysisArea}.`,
+      lift: estimatedLift,
+    };
+  }, [result, formData.price_per_night, analysisArea]);
+
+  const facilitySuggestions = useMemo(() => {
+    if (!selectedAreaFacilityCoverage.length) return [];
+
+    const selectedNormalized = new Set(formData.facilities.map((item) => item.toLowerCase()));
+    const weakest = [...selectedAreaFacilityCoverage]
+      .sort((a, b) => a.coverage - b.coverage)
+      .slice(0, 3);
+
+    const liftBase = 0.8;
+    return weakest.map((item, index) => {
+      const key = item.facility.toLowerCase();
+      const userHasIt = selectedNormalized.has(key);
+      const action = userHasIt
+        ? `Upgrade quality of ${item.facility}`
+        : `Add ${item.facility} to your plan`;
+      const estimatedLift = (liftBase + ((100 - item.coverage) / 100) * 1.4 - index * 0.1).toFixed(1);
+      return {
+        facility: item.facility,
+        coverage: item.coverage,
+        action,
+        estimatedLift: Number(estimatedLift) > 0 ? estimatedLift : '0.4',
+      };
+    });
+  }, [selectedAreaFacilityCoverage, formData.facilities]);
+
+  const areaFacilityInsights = useMemo(() => {
+    if (!selectedAreaFacilityCoverage.length) return null;
+    const sorted = [...selectedAreaFacilityCoverage].sort((a, b) => b.coverage - a.coverage);
+    const best = sorted[0];
+    const weakest = sorted[sorted.length - 1];
+    const average = sorted.reduce((sum, item) => sum + item.coverage, 0) / sorted.length;
+    return {
+      best,
+      weakest,
+      average: average.toFixed(1),
+    };
+  }, [selectedAreaFacilityCoverage]);
+
   return (
     
     <div className="min-h-screen py-8">
@@ -406,16 +589,12 @@ export default function InvestmentScoring() {
               {/* District */}
               <div>
                 <Label>District</Label>
-                <Select value={formData.district} onValueChange={handleDistrictChange}>
+                <Select value={formData.district} disabled>
                   <SelectTrigger className="mt-2">
                     <SelectValue placeholder="Select district" />
                   </SelectTrigger>
                   <SelectContent>
-                    {Object.keys(districtData).map((district) => (
-                      <SelectItem key={district} value={district}>
-                        {district}
-                      </SelectItem>
-                    ))}
+                    <SelectItem value="Colombo">Colombo</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -426,35 +605,15 @@ export default function InvestmentScoring() {
                 <Select 
                   value={formData.area} 
                   onValueChange={(area) => setFormData({ ...formData, area })}
-                  disabled={!formData.district}
+                  disabled={areasLoading}
                 >
                   <SelectTrigger className="mt-2">
-                    <SelectValue placeholder="Select area" />
+                    <SelectValue placeholder={areasLoading ? 'Loading areas...' : 'Select area'} />
                   </SelectTrigger>
                   <SelectContent>
                     {availableAreas.map((area) => (
                       <SelectItem key={area} value={area}>
                         {area}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              {/* Property Type */}
-              <div>
-                <Label>Property Type</Label>
-                <Select 
-                  value={formData.property_type} 
-                  onValueChange={(property_type) => setFormData({ ...formData, property_type })}
-                >
-                  <SelectTrigger className="mt-2">
-                    <SelectValue placeholder="Select type" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {propertyTypes.map((type) => (
-                      <SelectItem key={type} value={type}>
-                        {type}
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -517,7 +676,7 @@ export default function InvestmentScoring() {
               {/* Submit Button */}
               <Button
                 onClick={handleSubmit}
-                disabled={loading || !formData.district || !formData.area || !formData.property_type}
+                disabled={loading || !formData.district || !formData.area}
                 className="w-full bg-emerald-500 hover:bg-emerald-600"
                 size="lg"
               >
@@ -626,7 +785,7 @@ export default function InvestmentScoring() {
                 </CardHeader>
                 <CardContent>
                   <ResponsiveContainer width="100%" height={250}>
-                    <BarChart data={facilityGapData}>
+                    <BarChart data={selectedAreaFacilityCoverage}>
                       <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
                       <XAxis dataKey="facility" />
                       <YAxis domain={[0, 100]} />
@@ -642,29 +801,88 @@ export default function InvestmentScoring() {
                 <CardHeader>
                   <CardTitle>Investment Analysis</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3 text-sm leading-relaxed">
-                  <p>
-                    The <strong>{formData.area}</strong> area shows strong demand growth projected at{' '}
-                    <strong className="text-emerald-500">{result.future_demand_pct}%</strong> for {formData.year}.
-                  </p>
-                  <p>
-                    Your proposed <strong>{formData.stars}-star {formData.property_type}</strong> at{' '}
-                    <strong>${formData.price_per_night}/night</strong> is{' '}
-                    {formData.price_per_night > result.drivers.area_median_price ? 'above' : 
-                     formData.price_per_night < result.drivers.area_median_price ? 'below' : 'at'} the area 
-                    median of <strong>${result.drivers.area_median_price}</strong>.
-                  </p>
-                  <p>
-                    The facility completeness score of <strong>{(result.drivers.facility_completeness * 100).toFixed(0)}%</strong>{' '}
-                    indicates {result.drivers.facility_completeness > 0.7 ? 'excellent' : 'room for improvement in'} amenity offerings.
-                  </p>
-                  <p>
-                    Market gap alignment is at <strong>{(result.drivers.gap_alignment * 100).toFixed(0)}%</strong>, suggesting{' '}
-                    {result.drivers.gap_alignment > 0.6 ? 'good positioning' : 'potential oversupply concerns'} in this segment.
-                  </p>
-                  <p className={getScoreDetails(result.investment_score_0_100).color}>
-                    <strong>Overall Recommendation:</strong> {getScoreDetails(result.investment_score_0_100).label}
-                  </p>
+                <CardContent className="space-y-6 text-sm">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="rounded-lg border bg-blue-50/50 p-4">
+                      <p className="text-xs uppercase tracking-wide text-blue-700 font-semibold mb-1">Demand Outlook</p>
+                      <p className="text-gray-700">
+                        <strong>{analysisArea}</strong> is projected at{' '}
+                        <strong className="text-blue-700">{result.future_demand_pct}% demand growth</strong> for {analysisYear}.
+                      </p>
+                    </div>
+                    <div className="rounded-lg border bg-emerald-50/50 p-4">
+                      <p className="text-xs uppercase tracking-wide text-emerald-700 font-semibold mb-1">Price Positioning</p>
+                      <p className="text-gray-700">
+                        Your <strong>{analysisStars}-star Hotel</strong> at <strong>${analysisBudget}/night</strong> is{' '}
+                        <strong>
+                          {analysisBudget > result.drivers.area_median_price
+                            ? 'above'
+                            : analysisBudget < result.drivers.area_median_price
+                              ? 'below'
+                              : 'aligned with'}
+                        </strong>{' '}
+                        area median <strong>${result.drivers.area_median_price}</strong>.
+                      </p>
+                    </div>
+                    <div className="rounded-lg border bg-purple-50/50 p-4">
+                      <p className="text-xs uppercase tracking-wide text-purple-700 font-semibold mb-1">Facility Readiness</p>
+                      <p className="text-gray-700">
+                        Completeness score is <strong>{(result.drivers.facility_completeness * 100).toFixed(0)}%</strong>, showing{' '}
+                        {result.drivers.facility_completeness > 0.7 ? 'strong amenity readiness' : 'clear room for amenity improvements'}.
+                      </p>
+                    </div>
+                    <div className="rounded-lg border bg-orange-50/50 p-4">
+                      <p className="text-xs uppercase tracking-wide text-orange-700 font-semibold mb-1">Market Alignment</p>
+                      <p className="text-gray-700">
+                        Gap alignment is <strong>{(result.drivers.gap_alignment * 100).toFixed(0)}%</strong>, indicating{' '}
+                        {result.drivers.gap_alignment > 0.6 ? 'good market positioning' : 'moderate mismatch risk'}.
+                      </p>
+                    </div>
+                  </div>
+
+                  {areaFacilityInsights && (
+                    <div className="rounded-lg border p-4 bg-gray-50">
+                      <p className="font-semibold mb-2">Area Facility Snapshot</p>
+                      <p className="text-gray-700">
+                        Average satisfaction in <strong>{analysisArea}</strong> is <strong>{areaFacilityInsights.average}%</strong>.
+                        Best-performing facility: <strong>{areaFacilityInsights.best.facility}</strong>{' '}
+                        ({areaFacilityInsights.best.coverage.toFixed(1)}%). Lowest-performing facility:{' '}
+                        <strong>{areaFacilityInsights.weakest.facility}</strong>{' '}
+                        ({areaFacilityInsights.weakest.coverage.toFixed(1)}%).
+                      </p>
+                    </div>
+                  )}
+
+                  {budgetSuggestion && (
+                    <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
+                      <p className="font-semibold text-emerald-800 mb-1">Budget Optimization Suggestion</p>
+                      <p className="text-emerald-900">
+                        {budgetSuggestion.text} Estimated score uplift: <strong>+{budgetSuggestion.lift} points</strong>.
+                      </p>
+                    </div>
+                  )}
+
+                  {facilitySuggestions.length > 0 && (
+                    <div className="rounded-lg border p-4">
+                      <p className="font-semibold mb-3">Priority Facility Improvement Actions</p>
+                      <ul className="space-y-2">
+                        {facilitySuggestions.map((item) => (
+                          <li key={item.facility} className="flex items-start justify-between gap-3 border-b last:border-b-0 pb-2 last:pb-0">
+                            <span className="text-gray-700">
+                              {item.action} <span className="text-gray-500">(current coverage: {item.coverage.toFixed(1)}%)</span>
+                            </span>
+                            <span className="font-semibold text-teal-700 whitespace-nowrap">+{item.estimatedLift} pts</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  <div className={`rounded-lg border p-4 ${getScoreDetails(result.investment_score_0_100).bg}`}>
+                    <p className={`${getScoreDetails(result.investment_score_0_100).color} font-semibold`}>
+                      Overall Recommendation: {getScoreDetails(result.investment_score_0_100).label}
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
 

@@ -5,11 +5,19 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { TrendingUp, TrendingDown } from 'lucide-react';
 import { monthlyArrivals2024, monthlyArrivals2025 } from '../../data/sampleData';
 
-export default function MonthlyComparisonChart() {
-  const [year1, setYear1] = useState('2024');
-  const [year2, setYear2] = useState('2025');
+export default function MonthlyComparisonChart({ arrivalsData, loading }) {
+  const availableYears = arrivalsData?.insights?.available_years || [2024, 2025];
+  const sortedYears = [...availableYears].sort((a, b) => a - b);
+  const defaultYear1 = sortedYears[sortedYears.length - 2] || sortedYears[0];
+  const defaultYear2 = sortedYears[sortedYears.length - 1] || sortedYears[0];
+
+  const [year1, setYear1] = useState(String(defaultYear1));
+  const [year2, setYear2] = useState(String(defaultYear2));
 
   const getMonthlyData = (year) => {
+    if (arrivalsData?.monthly_by_year?.[year]) return arrivalsData.monthly_by_year[year];
+    if (year === String(defaultYear1)) return monthlyArrivals2024;
+    if (year === String(defaultYear2)) return monthlyArrivals2025;
     if (year === '2024') return monthlyArrivals2024;
     if (year === '2025') return monthlyArrivals2025;
     return monthlyArrivals2024;
@@ -21,7 +29,7 @@ export default function MonthlyComparisonChart() {
   const comparisonData = data1.map((item, index) => {
     const val1 = item.arrivals;
     const val2 = data2[index].arrivals;
-    const growth = ((val2 - val1) / val1) * 100;
+    const growth = val1 === 0 ? (val2 === 0 ? 0 : 100) : ((val2 - val1) / val1) * 100;
     
     return {
       month: item.month,
@@ -69,6 +77,7 @@ export default function MonthlyComparisonChart() {
               <p className="text-sm text-gray-600 mt-2">
                 Compare monthly tourist arrivals between different years
               </p>
+              {loading && <p className="text-xs text-gray-500 mt-1">Loading monthly records...</p>}
             </div>
             <div className="flex gap-3">
               <Select value={year1} onValueChange={setYear1}>
@@ -76,9 +85,11 @@ export default function MonthlyComparisonChart() {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="2023">2023</SelectItem>
-                  <SelectItem value="2024">2024</SelectItem>
-                  <SelectItem value="2025">2025</SelectItem>
+                  {sortedYears.map((year) => (
+                    <SelectItem key={year} value={String(year)}>
+                      {year}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
               <span className="flex items-center text-gray-500">vs</span>
@@ -87,9 +98,11 @@ export default function MonthlyComparisonChart() {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="2024">2024</SelectItem>
-                  <SelectItem value="2025">2025</SelectItem>
-                  <SelectItem value="2026">2026</SelectItem>
+                  {sortedYears.map((year) => (
+                    <SelectItem key={year} value={String(year)}>
+                      {year}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
             </div>

@@ -1,0 +1,83 @@
+{
+  "yearly_totals": [
+    { "year": 2015, "total_arrivals": 1798380 },
+    { "year": 2016, "total_arrivals": 2050832 },
+    { "year": 2017, "total_arrivals": 2116407 },
+    { "year": 2018, "total_arrivals": 2333796 },
+    { "year": 2019, "total_arrivals": 1913702 },
+    { "year": 2020, "total_arrivals": 507704 },
+    { "year": 2021, "total_arrivals": 194495 },
+    { "year": 2022, "total_arrivals": 719978 },
+    { "year": 2023, "total_arrivals": 1486895 },
+    { "year": 2024, "total_arrivals": 2052348 },
+    { "year": 2025, "total_arrivals": 2361000 }
+  ],
+  "monthly_by_year": {
+    "2015": [
+      { "month": "Jan", "arrivals": 169887 }, { "month": "Feb", "arrivals": 162657 }, { "month": "Mar", "arrivals": 155809 },
+      { "month": "Apr", "arrivals": 137389 }, { "month": "May", "arrivals": 126531 }, { "month": "Jun", "arrivals": 124303 },
+      { "month": "Jul", "arrivals": 131808 }, { "month": "Aug", "arrivals": 133568 }, { "month": "Sep", "arrivals": 125647 },
+      { "month": "Oct", "arrivals": 132945 }, { "month": "Nov", "arrivals": 151093 }, { "month": "Dec", "arrivals": 246363 }
+    ],
+    "2016": [
+      { "month": "Jan", "arrivals": 193335 }, { "month": "Feb", "arrivals": 185254 }, { "month": "Mar", "arrivals": 177436 },
+      { "month": "Apr", "arrivals": 156662 }, { "month": "May", "arrivals": 144396 }, { "month": "Jun", "arrivals": 141981 },
+      { "month": "Jul", "arrivals": 150523 }, { "month": "Aug", "arrivals": 152438 }, { "month": "Sep", "arrivals": 143421 },
+      { "month": "Oct", "arrivals": 151746 }, { "month": "Nov", "arrivals": 172241 }, { "month": "Dec", "arrivals": 281567 }
+    ],
+    "2017": [
+      { "month": "Jan", "arrivals": 199924 }, { "month": "Feb", "arrivals": 192273 }, { "month": "Mar", "arrivals": 183531 },
+      { "month": "Apr", "arrivals": 161783 }, { "month": "May", "arrivals": 148967 }, { "month": "Jun", "arrivals": 146295 },
+      { "month": "Jul", "arrivals": 155129 }, { "month": "Aug", "arrivals": 157168 }, { "month": "Sep", "arrivals": 147909 },
+      { "month": "Oct", "arrivals": 156461 }, { "month": "Nov", "arrivals": 177684 }, { "month": "Dec", "arrivals": 288876 }
+    ],
+    "2018": [
+      { "month": "Jan", "arrivals": 221162 }, { "month": "Feb", "arrivals": 212774 }, { "month": "Mar", "arrivals": 202688 },
+      { "month": "Apr", "arrivals": 178366 }, { "month": "May", "arrivals": 164296 }, { "month": "Jun", "arrivals": 161236 },
+      { "month": "Jul", "arrivals": 170975 }, { "month": "Aug", "arrivals": 173195 }, { "month": "Sep", "arrivals": 163154 },
+      { "month": "Oct", "arrivals": 172586 }, { "month": "Nov", "arrivals": 195903 }, { "month": "Dec", "arrivals": 317665 }
+    ],
+    "2019": [
+      { "month": "Jan", "arrivals": 183333 }, { "month": "Feb", "arrivals": 177523 }, { "month": "Mar", "arrivals": 168179 },
+      { "month": "Apr", "arrivals": 146896 }, { "month": "May", "arrivals": 134489 }, { "month": "Jun", "arrivals": 131276 },
+      { "month": "Jul", "arrivals": 139384 }, { "month": "Aug", "arrivals": 141713 }, { "month": "Sep", "arrivals": 133285 },
+      { "month": "Oct", "arrivals": 140938 }, { "month": "Nov", "arrivals": 160931 }, { "month": "Dec", "arrivals": 256053 }
+    ],
+    "2020": [
+      { "month": "Jan", "arrivals": 239770 }, { "month": "Feb", "arrivals": 190576 }, { "month": "Mar", "arrivals": 34557 },
+      { "month": "Apr", "arrivals": 4058 }, { "month": "May", "arrivals": 1885 }, { "month": "Jun", "arrivals": 1862 },
+      { "month": "Jul", "arrivals": 1976 }, { "month": "Aug", "arrivals": 1997 }, { "month": "Sep", "arrivals": 1877 },
+      { "month": "Oct", "arrivals": 3975 }, { "month": "Nov", "arrivals": 6714 }, { "month": "Dec", "arrivals": 18753 }
+    ],
+    "2021": [
+      { "month": "Jan", "arrivals": 5929 }, { "month": "Feb", "arrivals": 5565 }, { "month": "Mar", "arrivals": 0 },
+      { "month": "Apr", "arrivals": 0 }, { "month": "May", "arrivals": 0 }, { "month": "Jun", "arrivals": 0 },
+      { "month": "Jul", "arrivals": 0 }, { "month": "Aug", "arrivals": 0 }, { "month": "Sep", "arrivals": 10976 },
+      { "month": "Oct", "arrivals": 23245 }, { "month": "Nov", "arrivals": 39143 }, { "month": "Dec", "arrivals": 110142 }
+    ],
+    "2022": [
+      { "month": "Jan", "arrivals": 72527 }, { "month": "Feb", "arrivals": 73716 }, { "month": "Mar", "arrivals": 66532 },
+      { "month": "Apr", "arrivals": 55528 }, { "month": "May", "arrivals": 49337 }, { "month": "Jun", "arrivals": 47247 },
+      { "month": "Jul", "arrivals": 50395 }, { "month": "Aug", "arrivals": 52379 }, { "month": "Sep", "arrivals": 48608 },
+      { "month": "Oct", "arrivals": 51480 }, { "month": "Nov", "arrivals": 60464 }, { "month": "Dec", "arrivals": 90787 }
+    ],
+    "2023": [
+      { "month": "Jan", "arrivals": 144082 }, { "month": "Feb", "arrivals": 142564 }, { "month": "Mar", "arrivals": 132302 },
+      { "month": "Apr", "arrivals": 114231 }, { "month": "May", "arrivals": 103856 }, { "month": "Jun", "arrivals": 100995 },
+      { "month": "Jul", "arrivals": 107231 }, { "month": "Aug", "arrivals": 109564 }, { "month": "Sep", "arrivals": 102807 },
+      { "month": "Oct", "arrivals": 108745 }, { "month": "Nov", "arrivals": 124707 }, { "month": "Dec", "arrivals": 195916 }
+    ],
+    "2024": [
+      { "month": "Jan", "arrivals": 196329 }, { "month": "Feb", "arrivals": 194910 }, { "month": "Mar", "arrivals": 181129 },
+      { "month": "Apr", "arrivals": 157913 }, { "month": "May", "arrivals": 144009 }, { "month": "Jun", "arrivals": 140510 },
+      { "month": "Jul", "arrivals": 149274 }, { "month": "Aug", "arrivals": 152026 }, { "month": "Sep", "arrivals": 142626 },
+      { "month": "Oct", "arrivals": 150685 }, { "month": "Nov", "arrivals": 172291 }, { "month": "Dec", "arrivals": 271298 }
+    ],
+    "2025": [
+      { "month": "Jan", "arrivals": 225770 }, { "month": "Feb", "arrivals": 222391 }, { "month": "Mar", "arrivals": 207827 },
+      { "month": "Apr", "arrivals": 181412 }, { "month": "May", "arrivals": 165887 }, { "month": "Jun", "arrivals": 161949 },
+      { "month": "Jul", "arrivals": 172276 }, { "month": "Aug", "arrivals": 175180 }, { "month": "Sep", "arrivals": 164354 },
+      { "month": "Oct", "arrivals": 173546 }, { "month": "Nov", "arrivals": 198261 }, { "month": "Dec", "arrivals": 312147 }
+    ]
+  }
+}

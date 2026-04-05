@@ -4,12 +4,13 @@ import json
 import os
 from datetime import datetime
 
-from hotel_investment_scoring_v2 import run_model
+from Model.hotel_investment_scoring_v2 import run_model
 
 app = Flask(__name__)
 CORS(app)
 
-DATA_FILE = "backend/data/results.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "data", "results.json")
 
 
 def save_result(result):
@@ -78,4 +79,4 @@ def get_results():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)

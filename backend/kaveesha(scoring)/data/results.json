@@ -1,0 +1,221 @@
+[
+  {
+    "timestamp": "2026-04-27T01:47:33.735790",
+    "result": {
+      "area": "Colombo City",
+      "budget": 50,
+      "star_rating": 5,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:21:36.041465",
+    "result": {
+      "area": "Colombo 00500",
+      "budget": 50,
+      "star_rating": 3,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:21:51.069868",
+    "result": {
+      "area": "Battaramulla 10120",
+      "budget": 50,
+      "star_rating": 3,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:22:04.160883",
+    "result": {
+      "area": "Colombo 00600",
+      "budget": 50,
+      "star_rating": 5,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:23:40.732873",
+    "result": {
+      "area": "Colombo 00500",
+      "budget": 50,
+      "star_rating": 3,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:24:55.312919",
+    "result": {
+      "area": "Battaramulla 10120",
+      "budget": 50,
+      "star_rating": 3,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:26:24.432993",
+    "result": {
+      "area": "Boralesgamuwa",
+      "budget": 50,
+      "star_rating": 3,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:31:16.761687",
+    "result": {
+      "area": "Colombo 00010",
+      "budget": 50,
+      "star_rating": 5,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:31:28.941855",
+    "result": {
+      "area": "Colombo 00010",
+      "budget": 50,
+      "star_rating": 3,
+      "rooms": 20,
+      "score": 82.5,
+      "recommendation": "Good investment"
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:35:31.541674",
+    "result": {
+      "investment_score_0_100": 57.13,
+      "score": 57.13,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.7,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.5786,
+        "gap_alignment": 0.7289,
+        "surplus_risk": 0.3703,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 70,
+      "expected_revenue_index": 0.6393,
+      "regional_demand_pct": 77
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:35:41.983690",
+    "result": {
+      "investment_score_0_100": 57.23,
+      "score": 57.23,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.7,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.5898,
+        "gap_alignment": 0.733,
+        "surplus_risk": 0.3567,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 70,
+      "expected_revenue_index": 0.6449,
+      "regional_demand_pct": 77
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:37:29.408678",
+    "result": {
+      "investment_score_0_100": 62.65,
+      "score": 62.65,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.78,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.6198,
+        "gap_alignment": 0.733,
+        "surplus_risk": 0.3567,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 78,
+      "expected_revenue_index": 0.6599,
+      "regional_demand_pct": 81
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:38:48.573617",
+    "result": {
+      "investment_score_0_100": 62.47,
+      "score": 62.47,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.78,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.7555,
+        "gap_alignment": 0.5678,
+        "surplus_risk": 0.3741,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 78,
+      "expected_revenue_index": 0.7277,
+      "regional_demand_pct": 73
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:42:19.760063",
+    "result": {
+      "investment_score_0_100": 57.13,
+      "score": 57.13,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.7,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.5786,
+        "gap_alignment": 0.7289,
+        "surplus_risk": 0.3703,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 70,
+      "expected_revenue_index": 0.6393,
+      "regional_demand_pct": 77
+    }
+  },
+  {
+    "timestamp": "2026-04-27T02:45:41.800889",
+    "result": {
+      "investment_score_0_100": 57.67,
+      "score": 57.67,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.72,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.568,
+        "gap_alignment": 0.7251,
+        "surplus_risk": 0.3832,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 72,
+      "expected_revenue_index": 0.634,
+      "regional_demand_pct": 78
+    }
+  }
+]

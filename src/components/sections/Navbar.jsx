@@ -11,6 +11,7 @@ export default function Navbar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Regional Demand', href: '/regional-demand' },
+    { name: 'Review Score', href: '/review-score' },
     { name: 'Investment Score', href: '/analytics' },
   ];
 

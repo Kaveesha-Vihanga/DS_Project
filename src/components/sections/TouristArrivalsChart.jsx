@@ -2,19 +2,29 @@ import { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
-import { touristArrivals } from '../../data/sampleData';
 
-export default function TouristArrivalsChart() {
+export default function TouristArrivalsChart({ arrivalsData, loading }) {
   const [timeRange, setTimeRange] = useState('all');
+  const actualSeries = arrivalsData?.yearly_totals?.map((entry) => ({
+    year: entry.year,
+    arrivals: entry.total_arrivals,
+    isForecast: false,
+  })) || [];
+  const forecastSeries = arrivalsData?.yearly_forecasts?.map((entry) => ({
+    year: entry.year,
+    arrivals: entry.total_arrivals,
+    isForecast: true,
+  })) || [];
+  const chartSource = [...actualSeries, ...forecastSeries].sort((a, b) => a.year - b.year);
 
   const getFilteredData = () => {
-    const currentYear = 2025;
+    const currentYear = chartSource[chartSource.length - 1]?.year || 2025;
     if (timeRange === '5') {
-      return touristArrivals.filter(d => d.year >= currentYear - 5);
+      return chartSource.filter(d => d.year >= currentYear - 5);
     } else if (timeRange === '10') {
-      return touristArrivals.filter(d => d.year >= currentYear - 10);
+      return chartSource.filter(d => d.year >= currentYear - 10);
     }
-    return touristArrivals;
+    return chartSource;
   };
 
   const filteredData = getFilteredData();
@@ -28,9 +38,7 @@ export default function TouristArrivalsChart() {
           <p className="text-sm text-gray-600">
             {(data.arrivals / 1000000).toFixed(2)}M arrivals
           </p>
-          <p className="text-xs text-gray-500 mt-1">
-            {data.isForecast ? 'Forecast' : 'Actual'}
-          </p>
+          <p className="text-xs text-gray-500 mt-1">{data.isForecast ? 'Forecast' : 'Actual'}</p>
         </div>
       );
     }
@@ -43,7 +51,10 @@ export default function TouristArrivalsChart() {
         <div className="h-2 bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500" />
         <CardHeader className="bg-gradient-to-r from-gray-50 to-white">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <CardTitle className="text-2xl">Tourist Arrivals Trend</CardTitle>
+            <div>
+              <CardTitle className="text-2xl">Tourist Arrivals Trend</CardTitle>
+              {loading && <p className="text-sm text-gray-500 mt-1">Syncing data from Samha arrivals API...</p>}
+            </div>
             <div className="flex gap-2">
               {['5', '10', 'all'].map((range) => (
                 <Button
@@ -92,10 +103,9 @@ export default function TouristArrivalsChart() {
                 wrapperStyle={{ paddingTop: '20px' }}
                 iconType="line"
               />
-              {/* Actual Data Line */}
               <Line
                 type="monotone"
-                dataKey={(d) => !d.isForecast ? d.arrivals : null}
+                dataKey={(d) => (!d.isForecast ? d.arrivals : null)}
                 stroke="#0d9488"
                 strokeWidth={3}
                 name="Actual Arrivals"
@@ -103,16 +113,15 @@ export default function TouristArrivalsChart() {
                 activeDot={{ r: 7 }}
                 connectNulls={false}
               />
-              {/* Forecast Data Line */}
               <Line
                 type="monotone"
-                dataKey={(d) => d.isForecast ? d.arrivals : null}
+                dataKey={(d) => (d.isForecast ? d.arrivals : null)}
                 stroke="#3b82f6"
                 strokeWidth={3}
                 strokeDasharray="8 8"
-                name="Forecast"
-                dot={{ fill: '#3b82f6', r: 5 }}
-                activeDot={{ r: 7 }}
+                name="Forecast Arrivals"
+                dot={{ fill: '#3b82f6', r: 4 }}
+                activeDot={{ r: 6 }}
                 connectNulls={false}
               />
             </LineChart>
@@ -122,11 +131,15 @@ export default function TouristArrivalsChart() {
           <div className="mt-6 flex flex-wrap gap-4 justify-center text-sm">
             <div className="flex items-center gap-2">
               <div className="w-8 h-0.5 bg-teal-600" />
-              <span className="text-gray-600">Actual Data (2016-2025)</span>
+              <span className="text-gray-600">
+                Actual Data ({actualSeries[0]?.year} - {actualSeries[actualSeries.length - 1]?.year})
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-8 h-0.5 bg-blue-600 border-dashed border-t-2 border-blue-600" />
-              <span className="text-gray-600">Forecast (2026-2030)</span>
+              <span className="text-gray-600">
+                Forecast ({forecastSeries[0]?.year} - {forecastSeries[forecastSeries.length - 1]?.year})
+              </span>
             </div>
           </div>
         </CardContent>
