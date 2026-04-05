@@ -217,5 +217,65 @@
       "expected_revenue_index": 0.634,
       "regional_demand_pct": 78
     }
+  },
+  {
+    "timestamp": "2026-04-27T03:23:06.781658",
+    "result": {
+      "investment_score_0_100": 66.45,
+      "score": 66.45,
+      "recommendation": "Recommended",
+      "risk_level": "Moderate Risk",
+      "drivers": {
+        "future_demand_fit": 0.82,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.7619,
+        "gap_alignment": 0.5701,
+        "surplus_risk": 0.3662,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 82,
+      "expected_revenue_index": 0.7309,
+      "regional_demand_pct": 75
+    }
+  },
+  {
+    "timestamp": "2026-04-30T03:25:01.909759",
+    "result": {
+      "investment_score_0_100": 55.41,
+      "score": 55.41,
+      "recommendation": "Neutral",
+      "risk_level": "Moderate-High Risk",
+      "drivers": {
+        "future_demand_fit": 0.7,
+        "price_fit_vs_median": 0.7,
+        "facility_completeness": 0.4746,
+        "gap_alignment": 0.542,
+        "surplus_risk": 0.4602,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 70,
+      "expected_revenue_index": 0.5873,
+      "regional_demand_pct": 69
+    }
+  },
+  {
+    "timestamp": "2026-04-30T03:27:17.628155",
+    "result": {
+      "investment_score_0_100": 68.28,
+      "score": 68.28,
+      "recommendation": "Recommended",
+      "risk_level": "Moderate Risk",
+      "drivers": {
+        "future_demand_fit": 0.82,
+        "price_fit_vs_median": 0.8667,
+        "facility_completeness": 0.7255,
+        "gap_alignment": 0.5678,
+        "surplus_risk": 0.3741,
+        "area_median_price": 95
+      },
+      "future_demand_pct": 82,
+      "expected_revenue_index": 0.7961,
+      "regional_demand_pct": 75
+    }
   }
 ]

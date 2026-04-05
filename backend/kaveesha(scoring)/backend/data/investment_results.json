@@ -155,5 +155,90 @@
     },
     "recommendation": "Neutral",
     "risk_level": "Moderate-High Risk"
+  },
+  {
+    "timestamp": "2026-04-27T03:23:06.773541",
+    "inputs": {
+      "area": "Kolonnawa 10107",
+      "budget_score": 25.0,
+      "location_score": 68.0,
+      "demand_score": 82.0,
+      "competition_score": 36.62400000000001,
+      "facilities_score": 76.19199999999998,
+      "star_rating": 5,
+      "num_rooms": 20,
+      "hotel_type": "Hotel",
+      "amenities": [
+        "AC",
+        "Spa",
+        "Restaurant",
+        "Parking",
+        "Beach Access",
+        "Bar",
+        "Pool",
+        "WiFi"
+      ]
+    },
+    "scores": {
+      "fuzzy_score": 75.0,
+      "topsis_score": 53.62,
+      "final_score": 66.45
+    },
+    "recommendation": "Recommended",
+    "risk_level": "Moderate Risk"
+  },
+  {
+    "timestamp": "2026-04-30T03:25:01.890754",
+    "inputs": {
+      "area": "Battaramulla 10120",
+      "budget_score": 25.0,
+      "location_score": 68.0,
+      "demand_score": 70.0,
+      "competition_score": 46.01649999999999,
+      "facilities_score": 47.457,
+      "star_rating": 3,
+      "num_rooms": 20,
+      "hotel_type": "Hotel",
+      "amenities": [
+        "Beach Access"
+      ]
+    },
+    "scores": {
+      "fuzzy_score": 59.5,
+      "topsis_score": 49.28,
+      "final_score": 55.41
+    },
+    "recommendation": "Neutral",
+    "risk_level": "Moderate-High Risk"
+  },
+  {
+    "timestamp": "2026-04-30T03:27:17.589486",
+    "inputs": {
+      "area": "Padukka",
+      "budget_score": 37.5,
+      "location_score": 68.0,
+      "demand_score": 82.0,
+      "competition_score": 37.40599999999999,
+      "facilities_score": 72.548,
+      "star_rating": 4,
+      "num_rooms": 20,
+      "hotel_type": "Hotel",
+      "amenities": [
+        "Restaurant",
+        "Parking",
+        "Beach Access",
+        "Pool",
+        "WiFi",
+        "Bar",
+        "Gym"
+      ]
+    },
+    "scores": {
+      "fuzzy_score": 75.0,
+      "topsis_score": 58.21,
+      "final_score": 68.28
+    },
+    "recommendation": "Recommended",
+    "risk_level": "Moderate Risk"
   }
 ]
