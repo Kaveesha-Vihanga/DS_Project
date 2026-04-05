@@ -1,0 +1,37 @@
+district,year,predicted_tourism
+Nuwara Eliya,2027,2320.8
+Nuwara Eliya,2028,2784.96
+Nuwara Eliya,2029,3341.95
+Nuwara Eliya,2030,3868.0
+Colombo,2027,2317.2
+Colombo,2028,2780.64
+Colombo,2029,3336.77
+Colombo,2030,3862.0
+Polonnaruwa,2027,2252.4
+Polonnaruwa,2028,2702.88
+Polonnaruwa,2029,3243.46
+Polonnaruwa,2030,3754.0
+Anuradhapura,2027,2150.56
+Anuradhapura,2028,2580.67
+Anuradhapura,2029,3096.81
+Anuradhapura,2030,3584.27
+Galle,2027,2103.76
+Galle,2028,2524.51
+Galle,2029,3029.41
+Galle,2030,3506.27
+Hambantota,2027,2067.92
+Hambantota,2028,2481.5
+Hambantota,2029,2977.8
+Hambantota,2030,3446.53
+Ampara,2027,1972.72
+Ampara,2028,2367.26
+Ampara,2029,2840.72
+Ampara,2030,3287.87
+Puttalam,2027,1919.6
+Puttalam,2028,2303.52
+Puttalam,2029,2764.22
+Puttalam,2030,3199.33
+Kandy,2027,1855.76
+Kandy,2028,2226.91
+Kandy,2029,2672.29
+Kandy,2030,3092.93
